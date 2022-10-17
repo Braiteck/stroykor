@@ -1,0 +1,400 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 36px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .wrap,
+    .fancybox__container
+    {
+        zoom: .77;
+    }
+
+    @-moz-document url-prefix()
+    {
+        html
+        {
+            width: calc(100% / .77);
+            height: calc(100% / .77);
+
+            transform: scale(.77);
+            transform-origin: left top;
+        }
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    #get_price_modal.fancybox__content > .carousel__button.is-close,
+    .success_modal.fancybox__content > .carousel__button.is-close
+    {
+        left: -28px;
+
+        width: 56px;
+        height: 56px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 16px;
+    }
+
+
+    .form .columns > *.width1of4
+    {
+        width: calc(30% - var(--form_columns_offset));
+    }
+
+    .form .columns > *.width3of4
+    {
+        width: calc(70% - var(--form_columns_offset));
+    }
+
+
+    .form .columns > *.width1of4.default
+    {
+        width: calc(25% - var(--form_columns_offset));
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .exp > * + *
+    {
+        margin-left: 40px;
+    }
+
+    .block_head .exp .val
+    {
+        font-size: 14px;
+        line-height: 38px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*-------------
+        Objects
+    -------------*/
+    .objects .object .variants > *
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .objects .object .variants .label
+    {
+        font-size: 32px;
+    }
+
+
+    .objects .object .name
+    {
+        font-size: 56px;
+    }
+
+
+
+    /*--------------------
+        Purchase terms
+    --------------------*/
+    .purchase_terms .tabs
+    {
+        margin-bottom: 150px;
+    }
+
+
+    .purchase_terms .info .title
+    {
+        font-size: 36px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .info
+    {
+        width: 464px;
+    }
+
+
+    .services .service.big_w .title
+    {
+        font-size: 50px;
+    }
+
+
+
+    /*----------------
+        Apartments
+    ----------------*/
+    .apartments .row .apartment .info > *:first-child
+    {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .apartments .row .apartment .info > *:first-child + .sep
+    {
+        display: none;
+    }
+
+
+
+    /*----------------------
+        Sales department
+    ----------------------*/
+    .sales_department .data,
+    .sales_department .map
+    {
+        width: calc(50% - 20px);
+    }
+
+    .sales_department .data
+    {
+        margin-bottom: -64px;
+        margin-left: -64px;
+    }
+
+    .sales_department .data > *
+    {
+        margin-bottom: 64px;
+        margin-left: 64px;
+    }
+
+    .sales_department .phones
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .sales_department .map #map
+    {
+        height: 400px;
+    }
+
+
+
+    /*----------------
+        Storerooms
+    ----------------*/
+    .storerooms .head
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .storerooms .head .floor
+    {
+        font-size: 32px;
+    }
+
+
+    .storerooms .head .title
+    {
+        font-size: 32px;
+
+        margin-left: 40px;
+    }
+
+
+    .storerooms .head .colors > * + *
+    {
+        margin-left: 40px;
+    }
+
+    .storerooms .head .colors .color
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .storerooms .schema .get_price_btn
+    {
+        font-size: 22px;
+
+        height: 60px;
+        margin-top: 24px;
+        padding: 16px;
+    }
+
+
+
+    /*-------------
+        Parking
+    -------------*/
+    .parking .head
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .parking .head .floor
+    {
+        font-size: 32px;
+    }
+
+
+    .parking .head .title
+    {
+        font-size: 32px;
+
+        margin-left: 40px;
+    }
+
+
+    .parking .head .colors > * + *
+    {
+        margin-left: 40px;
+    }
+
+    .parking .head .colors .color
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .parking .schema .get_price_btn
+    {
+        font-size: 22px;
+
+        height: 60px;
+        margin-top: 24px;
+        padding: 16px;
+    }
+
+
+
+    /*-------------------
+        Building info
+    -------------------*/
+    .building_info .building .tooltip
+    {
+        left: -60px;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .layouts .col_right
+    {
+        width: 680px;
+        margin-right: 0;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .article_title
+    {
+        font-size: 76px;
+
+        width: 900px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .service_title
+    {
+        font-size: 76px;
+
+        width: 900px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .subscribe .title
+    {
+        margin-bottom: 120px;
+    }
+
+
+    footer .subscribe .agree
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    footer .subscribe .agree label br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fixed_modal
+    {
+        width: 500px;
+    }
+
+
+    .fixed_modal .scroll
+    {
+        padding: 80px 30px 50px;
+    }
+
+
+    .fixed_modal .modal_title
+    {
+        font-size: 32px;
+    }
+
+
+    .fixed_modal .storerooms
+    {
+        margin-bottom: 50px;
+        padding-bottom: 23px;
+    }
+
+
+    .fixed_modal .form .submit
+    {
+        padding-top: 24px;
+    }
+}

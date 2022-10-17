@@ -1,0 +1,2426 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 35px;
+    }
+
+
+    .wrap,
+    .fancybox__container
+    {
+        zoom: 1;
+    }
+
+
+    @-moz-document url-prefix()
+    {
+        html
+        {
+            width: 100%;
+            height: 100%;
+
+            transform: scale(1);
+        }
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        top: 42px;
+        left: 20px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+        top: 0;
+        bottom: 0;
+
+        width: 60px;
+        height: 60px;
+        margin: auto;
+    }
+
+    .swiper-button-prev
+    {
+        left: 20px;
+    }
+
+    .swiper-button-next
+    {
+        right: 20px;
+        left: auto;
+    }
+
+
+    .block,
+    .block.big_m
+    {
+        margin-bottom: 120px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .header_wrap
+    {
+        height: auto !important;
+    }
+
+    header.fixed
+    {
+        -webkit-animation: none;
+                animation: none;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+        padding: 120px 0 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .cont
+    {
+        padding: 0;
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        padding: 0;
+
+        border-top: 1px solid #c6c8c9;
+
+        overscroll-behavior-y: contain;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .info
+    {
+        display: none;
+
+        padding: 0;
+    }
+
+
+    header .bottom
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: 100%;
+        margin: 0;
+        padding: 40px 20px;
+
+        border-bottom: 1px solid #c6c8c9;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 0;
+    }
+
+    header .menu_item > a
+    {
+        font-size: 61px;
+        line-height: 94%;
+
+        letter-spacing: -.05em;
+    }
+
+    header .menu_item > a:after
+    {
+        display: none;
+    }
+
+
+    header .favorite_link
+    {
+        display: none;
+    }
+
+
+    header .mob_location
+    {
+        display: block;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    .page_head.border
+    {
+        margin-bottom: 50px;
+        padding-bottom: 24px;
+    }
+
+
+    .page_head .title
+    {
+        font-size: 65px;
+    }
+
+
+    .page_head .desc
+    {
+        font-size: 34px;
+
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .page_head .desc .offset
+    {
+        width: 120px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+    .form .columns > *.width1of3.tablet_full,
+    .form .columns > *.width2of3.tablet_full
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+    .form .columns > *.margin_top
+    {
+        margin-top: 40px;
+    }
+
+
+    .form .line.tablet_no_margin
+    {
+        margin-bottom: 0;
+    }
+
+
+    .form .floor_range
+    {
+        width: 100%;
+    }
+
+
+    .form .reset_btn
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 904px;
+        padding-bottom: 16px;
+    }
+
+
+    .main_slider .slide .info
+    {
+        width: 100%;
+    }
+
+
+    .main_slider .slide .title
+    {
+        font-size: 50px;
+        line-height: 94%;
+    }
+
+    .main_slider .slide .title::first-letter
+    {
+        margin-left: 120px;
+    }
+
+
+
+    /*-------------
+        Objects
+    -------------*/
+    .objects .cont
+    {
+        position: relative;
+    }
+
+
+    .objects .block_title
+    {
+        font-size: 65px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .objects .tabs
+    {
+        margin-bottom: 48px;
+        margin-left: -48px;
+        padding-bottom: 23px;
+    }
+
+    .objects .tabs button
+    {
+        font-size: 30px;
+
+        margin-left: 48px;
+    }
+
+
+    .objects .controls
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .objects .controls .categories
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .objects .controls .categories::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .objects .controls .categories::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .objects .controls .categories .btn
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding: 15px 56px;
+
+        vertical-align: top;
+    }
+
+    .objects .controls .categories .btn + .btn
+    {
+        margin-left: -4px;
+    }
+
+
+    .objects .controls .views
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        margin-top: 30px;
+    }
+
+    .objects .tab_content .controls .views
+    {
+        top: -96px;
+        right: 0;
+    }
+
+
+    .objects .row
+    {
+        margin-bottom: -50px;
+        margin-left: 0;
+    }
+
+    .objects .row > *
+    {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+
+    .objects .object .info
+    {
+        margin-left: -34px;
+    }
+
+    .objects .object .name
+    {
+        font-size: 50px;
+
+        max-width: calc(100% - 34px);
+        margin-left: 34px;
+    }
+
+    .objects .object .location
+    {
+        font-size: 18px;
+
+        top: 4px;
+
+        max-width: calc(100% - 34px);
+        margin-left: 34px;
+    }
+
+
+    .objects .object .variants > *
+    {
+        padding-top: 13px;
+    }
+
+    .objects .object .variants .label
+    {
+        font-size: 28px;
+    }
+
+    .objects .object .variants .val
+    {
+        font-size: 16px;
+    }
+
+
+    .objects #objects_map
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+
+
+    /*--------------------
+        Purchase terms
+    --------------------*/
+    .purchase_terms .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px 50px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .purchase_terms .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .purchase_terms .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .purchase_terms .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding: 15px 56px;
+
+        vertical-align: top;
+    }
+
+    .purchase_terms .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+    .purchase_terms .icon
+    {
+        display: none;
+    }
+
+    .purchase_terms .info
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .purchase_terms .info .title
+    {
+        font-size: 35px;
+    }
+
+
+    .purchase_terms .info .link
+    {
+        display: flex;
+    }
+
+    .purchase_terms .info .link a
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px 80px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .services .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .services .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .services .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .services .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+    .services .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .services .row > *,
+    .services .row > *.big_w
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+    .services .service .thumb
+    {
+        padding-bottom: 575px;
+    }
+
+    .services .service .type
+    {
+        font-size: 25px;
+    }
+
+    .services .service .info
+    {
+        width: 508px;
+    }
+
+
+    .services .service.big_w .thumb
+    {
+        padding-bottom: 400px;
+    }
+
+    .services .service.big_w .info
+    {
+        width: 100%;
+    }
+
+    .services .service.big_w .title br
+    {
+        display: none;
+    }
+
+    .services .service.big_w .title .offset
+    {
+        display: inline-block;
+
+        width: 120px;
+
+        vertical-align: top;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        margin-bottom: 0;
+    }
+
+
+    .articles .article
+    {
+        padding: 57px 0;
+    }
+
+    .articles .article .date,
+    .articles .article .category
+    {
+        width: calc(50% - 10px);
+    }
+
+    .articles .article .date sup
+    {
+        font-size: 18px;
+    }
+
+    .articles .article .category
+    {
+        font-size: 18px;
+
+        margin-left: 20px;
+    }
+
+    .articles .article .name
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head .cont
+    {
+        height: 460px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .filter
+    {
+        margin-bottom: 50px;
+        padding: 60px 0;
+    }
+
+    .filter.border
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .filter .desc_link
+    {
+        top: 83px;
+    }
+
+
+    .filter .block_title
+    {
+        font-size: 50px;
+        line-height: 94%;
+
+        margin-bottom: 50px;
+    }
+
+
+
+    /*----------------
+        Apartments
+    ----------------*/
+    .apartments .list .apartment
+    {
+        position: relative;
+
+        padding: 20px 0;
+    }
+
+
+    .apartments .list .apartment .booked,
+    .apartments .list .apartment:hover .booked
+    {
+        display: none;
+    }
+
+
+    .apartments .list .apartment .info
+    {
+        align-self: flex-end;
+
+        width: calc(100% - 440px);
+        margin-right: auto;
+        margin-left: 15px;
+        padding: 30px 0;
+    }
+
+    .apartments .list .apartment .mob_info
+    {
+        display: flex;
+    }
+
+
+    .apartments .list .apartment .type span
+    {
+        position: absolute;
+        top: 20px;
+        left: 200px;
+
+        display: block;
+    }
+
+
+    .apartments .list .apartment .view,
+    .apartments .list .apartment .floor,
+    .apartments .list .apartment .number
+    {
+        display: none;
+    }
+
+
+    .apartments .list .apartment .area
+    {
+        width: 140px;
+    }
+
+
+    .apartments .list .apartment .btns
+    {
+        display: block;
+
+        margin-left: 20px;
+    }
+
+    .apartments .list .apartment .btns .btn + .btn
+    {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .apartments .list .apartment .btns .btn
+    {
+        position: relative;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 60px;
+        height: 60px;
+
+        transition: .2s linear;
+
+        border: 1px solid #c6c8c9;
+        border-radius: 50%;
+    }
+
+    .apartments .list .apartment .lock_btn svg
+    {
+        width: 17px;
+        height: 25px;
+    }
+
+    .apartments .list .apartment .favorite_btn svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .apartments .list .apartment .btns .btn:hover
+    {
+        color: #fff;
+        border-color: #000;
+        background: #000;
+    }
+
+    .apartments .list .apartment .btns .lock_btn .booked
+    {
+        right: 100%;
+        left: auto;
+
+        margin-right: 15px;
+
+        text-align: left;
+        pointer-events: none;
+
+        color: #000;
+    }
+
+    .apartments .list .apartment .btns .lock_btn:hover .booked
+    {
+        display: flex;
+    }
+
+
+
+    .apartments .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .apartments .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .apartments .row .apartment
+    {
+        padding: 99px 19px 19px;
+    }
+
+
+    .apartments .row .apartment .type
+    {
+        top: 41px;
+        left: 19px;
+    }
+
+
+    .apartments .row .apartment .btns
+    {
+        top: 19px;
+        right: 19px;
+    }
+
+    .apartments .row .apartment .btns .btn + .btn
+    {
+        margin-left: 10px;
+    }
+
+    .apartments .row .apartment .btns .btn
+    {
+        position: relative;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 60px;
+        height: 60px;
+
+        transition: .2s linear;
+
+        border: 1px solid #c6c8c9;
+        border-radius: 50%;
+    }
+
+    .apartments .row .apartment .lock_btn svg
+    {
+        width: 17px;
+        height: 25px;
+    }
+
+    .apartments .row .apartment .favorite_btn svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .apartments .row .apartment .btns .btn:hover
+    {
+        color: #fff;
+        border-color: #000;
+        background: #000;
+    }
+
+    .apartments .row .apartment .btns .lock_btn .booked
+    {
+        top: 100%;
+        right: -49px;
+        left: auto;
+
+        width: 277px;
+        margin-top: 15px;
+
+        transform: none;
+        text-align: left;
+        pointer-events: none;
+
+        color: #000;
+    }
+
+    .apartments .row .apartment .booked span
+    {
+        margin: 0;
+    }
+
+    .apartments .row .apartment .btns .lock_btn:hover .booked
+    {
+        display: flex;
+    }
+
+
+    .apartments .row .apartment .thumb
+    {
+        height: 327px;
+        margin-bottom: 30px;
+    }
+
+
+    .apartments .row .apartment .booked,
+    .apartments .row .apartment:hover .booked
+    {
+        display: none;
+    }
+
+
+    .apartments .row .apartment .name,
+    .apartments .row .apartment .area
+    {
+        font-size: 25px;
+    }
+
+    .apartments .row .apartment .area sup
+    {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+
+    .apartments .row .apartment .info
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .section + .section
+    {
+        margin-top: 100px;
+    }
+
+
+    .contacts_info .block_head
+    {
+        margin-bottom: 70px;
+    }
+
+    .contacts_info .block_head .title
+    {
+        font-size: 50px;
+    }
+
+
+    .contacts_info .row
+    {
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+
+    .contacts_info .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+    .contacts_info .row > *.big_w
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .item .val
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-----------
+        Terms
+    -----------*/
+    .terms .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px 80px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .terms .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .terms .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .terms .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .terms .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+    .terms .bottom_title
+    {
+        font-size: 34px;
+
+        margin-top: 120px;
+    }
+
+    .terms .bottom_title .offset
+    {
+        width: 120px;
+    }
+
+
+
+    /*----------------------
+        Sales department
+    ----------------------*/
+    .sales_department .data
+    {
+        width: 100%;
+        margin-bottom: -80px;
+        margin-left: -20px;
+    }
+
+    .sales_department .data > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 80px;
+        margin-left: 20px;
+    }
+
+
+    .sales_department .phones
+    {
+        width: 100%;
+    }
+
+
+    .sales_department .map
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .sales_department .map #map
+    {
+        height: 466px;
+    }
+
+
+    .sales_department .map .desc
+    {
+        font-size: 18px;
+
+        width: 353px;
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .item + .item
+    {
+        margin-top: 80px;
+    }
+
+
+    .about_info .data
+    {
+        font-size: 20px;
+
+        width: 75%;
+    }
+
+    .about_info .data > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .about_info .data img
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .about_info .block_title
+    {
+        font-size: 34px;
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .about_info .block_title .offset
+    {
+        width: 120px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 50px;
+        padding-top: 70px;
+    }
+
+    .article_info .head.border
+    {
+        margin-bottom: 40px;
+        padding-bottom: 11px;
+    }
+
+
+    .article_info .article_title
+    {
+        font-size: 65px;
+
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    .article_info .image
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 50px;
+        margin-left: -20px;
+        padding-bottom: 64.84%;
+    }
+
+
+    .article_info .info
+    {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+
+    .article_info .data
+    {
+        width: calc(100% - 265px);
+    }
+
+
+
+    /*----------------
+        Storerooms
+    ----------------*/
+    .storerooms .head
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .storerooms .head .floor
+    {
+        font-size: 30px;
+    }
+
+
+    .storerooms .head .title
+    {
+        font-size: 30px;
+    }
+
+
+    .storerooms .head .colors
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        Parking
+    -------------*/
+    .parking .head
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .parking .head .floor
+    {
+        font-size: 30px;
+    }
+
+
+    .parking .head .title
+    {
+        font-size: 30px;
+    }
+
+
+    .parking .head .colors
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        Building info
+    -------------------*/
+    .building_info .building .title
+    {
+        font-size: 30px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .building_info .row
+    {
+        margin-left: 0;
+    }
+
+    .building_info .row > *
+    {
+        width: 540px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .building_info .building + .building
+    {
+        margin-top: 60px;
+    }
+
+    .building_info .building .floor + .floor
+    {
+        margin-top: 14px;
+    }
+
+
+    .building_info .building .number
+    {
+        line-height: 60px;
+    }
+
+
+    .building_info .building .vals
+    {
+        width: calc(100% - 22px);
+        margin-bottom: -14px;
+        margin-left: -14px;
+    }
+
+    .building_info .building .vals > *
+    {
+        margin-bottom: 14px;
+        margin-left: 14px;
+    }
+
+
+    .building_info .building .vals .item
+    {
+        font-size: 18px;
+        line-height: 58px;
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .building_info .building .vals .item svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .building_info .building .tooltip
+    {
+        top: calc(100% + 15px);
+        left: -75px;
+    }
+
+    .building_info .building .vals .item:first-child .tooltip
+    {
+        left: -37px;
+    }
+
+    .building_info .building .vals .item:last-child .tooltip
+    {
+        left: -149px;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .slider
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .project_info .slider .image
+    {
+        height: 904px;
+    }
+
+
+    .project_info .slider .image:before
+    {
+        height: 140px;
+    }
+
+    .project_info .slider .image:after
+    {
+        height: 177px;
+    }
+
+
+    .project_info .slider .swiper-button-next,
+    .project_info .slider .swiper-button-prev
+    {
+        top: auto;
+        bottom: -31px;
+    }
+
+    .project_info .slider .swiper-button-prev
+    {
+        left: 20px;
+    }
+
+    .project_info .slider .swiper-button-next
+    {
+        right: auto;
+        left: 104px;
+    }
+
+
+
+    .project_info .information .project_name
+    {
+        font-size: 50px;
+
+        width: 100%;
+        margin-bottom: 78px;
+
+        text-align: left;
+    }
+
+
+    .project_info .information .selection_btn
+    {
+        top: -9px;
+        right: 20px;
+    }
+
+
+    .project_info .information .data .row > *
+    {
+        width: calc(50% - 22px);
+    }
+
+    .project_info .information .data .val
+    {
+        font-size: 16px;
+    }
+
+    .project_info .information .data .row > *:last-child
+    {
+        margin-left: auto;
+    }
+
+
+    .project_info .information .title
+    {
+        font-size: 35px;
+
+        width: 100%;
+    }
+
+    .project_info .information .title .offset
+    {
+        display: none;
+    }
+
+
+    .project_info .information .video_link .thumb
+    {
+        height: 400px;
+    }
+
+    .project_info .information .video_link .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project_info .information .video_link .icon svg
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+
+    .project_info .choose_house .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 40px -20px 0;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .project_info .choose_house .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .project_info .choose_house .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .project_info .choose_house .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .project_info .choose_house .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+
+    .project_info .choose_house .image
+    {
+        height: 726px;
+    }
+
+    .project_info .choose_house .image img
+    {
+        left: -22%;
+
+        width: auto;
+        min-width: 100vw;
+    }
+
+
+    .project_info .choose_house .side.north
+    {
+        top: 32.05%;
+        left: 7.84%;
+    }
+
+    .project_info .choose_house .side.south
+    {
+        top: 24.35%;
+        left: 56.14%;
+    }
+
+
+    .project_info .choose_house .side .dropdown
+    {
+        transform: translateX(-45%);
+    }
+
+
+
+    .project_info .about .item .info
+    {
+        font-size: 25px;
+    }
+
+
+    .project_info .about .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .project_info .about .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .project_info .about .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .project_info .about .row > *.big_w,
+    .project_info .about .row > *.tablet_big_w
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .project_info .about .item,
+    .project_info .about .item.min_h
+    {
+        height: 350px;
+    }
+
+
+
+    .project_info .credit
+    {
+        margin-bottom: 120px;
+    }
+
+
+
+    .project_info .tour .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 40px -20px 0;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .project_info .tour .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .project_info .tour .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .project_info .tour .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .project_info .tour .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+    .project_info .tour .image
+    {
+        height: 400px;
+    }
+
+
+    .project_info .tour .image .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project_info .tour .image .icon svg
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+
+
+    .project_info .panorama .image
+    {
+        height: 400px;
+    }
+
+
+    .project_info .panorama .image .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project_info .panorama .image .icon svg
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+
+
+    .project_info .location .row
+    {
+        margin-left: -20px;
+    }
+
+    .project_info .location .row > *
+    {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+
+    .project_info .location .val
+    {
+        font-size: 18px;
+    }
+
+
+    .project_info .location .block_title
+    {
+        width: 100%;
+    }
+
+    .project_info .location .block_title .offset
+    {
+        display: none;
+    }
+
+
+    .project_info .location .map
+    {
+        margin-top: 70px;
+    }
+
+
+    .project_info .location .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 30px -20px 0;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .project_info .location .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .project_info .location .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .project_info .location .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding: 15px 56px;
+
+        vertical-align: top;
+    }
+
+    .project_info .location .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+
+    .project_info .places_nearby .data
+    {
+        width: calc(100% - 125px);
+    }
+
+
+    .project_info .places_nearby .item + .item
+    {
+        margin-top: 8px;
+    }
+
+    .project_info .places_nearby .item .time
+    {
+        width: 105px;
+    }
+
+
+    .project_info .layouts .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px 40px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .project_info .layouts .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .project_info .layouts .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .project_info .layouts .tabs button
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding: 15px 56px;
+
+        vertical-align: top;
+    }
+
+    .project_info .layouts .tabs button + button
+    {
+        margin-left: -4px;
+    }
+
+
+    .project_info .layouts .col_left
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .project_info .layouts .scroll
+    {
+        overflow: visible;
+
+        max-height: none;
+    }
+
+
+    .project_info .layouts .items
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px 40px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .project_info .layouts .items::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .project_info .layouts .items::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .project_info .layouts .items > *,
+    .project_info .layouts .items .btn
+    {
+        display: inline-block;
+
+        width: 138px;
+        max-width: none;
+        height: 138px;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .project_info .layouts .items .btn img
+    {
+        margin: auto;
+    }
+
+
+    .project_info .layouts .type_info
+    {
+        margin-top: 43px;
+    }
+
+    .project_info .layouts .type_info .features > * + *
+    {
+        margin-top: 30px;
+    }
+
+    .project_info .layouts .type_info .link
+    {
+        margin-top: 50px;
+    }
+
+
+    .project_info .layouts .col_right
+    {
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+
+
+    /*------------
+        Credit
+    ------------*/
+    .credit .flex
+    {
+        margin-bottom: -50px;
+        margin-left: -20px;
+    }
+
+    .credit .flex + .flex
+    {
+        margin-top: 43px;
+    }
+
+
+    .credit .flex > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    .credit .flex > *.big_w
+    {
+        width: calc(50% - 20px);
+    }
+
+    .credit .flex > *.tablet_big_w
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .credit .big_h .label
+    {
+        margin-bottom: 232px;
+    }
+
+
+    .credit .val
+    {
+        font-size: 50px;
+    }
+
+    .credit .big_h .val
+    {
+        font-size: 128px;
+    }
+
+
+    .credit ol li
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------------------
+        Construction progress
+    ---------------------------*/
+    .construction_progress .flex > *,
+    .construction_progress .flex > *.video_btn
+    {
+        width: calc(100% - 22px);
+    }
+
+    .construction_progress .btn .thumb,
+    .construction_progress .btn.video_btn .thumb
+    {
+        height: 400px;
+    }
+
+    .construction_progress .btn.video_btn .icon,
+    .construction_progress .btn .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .construction_progress .btn .icon svg
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .construction_progress .btn.video_btn .icon svg
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .head
+    {
+        margin-bottom: 60px;
+        padding-top: 70px;
+        padding-bottom: 21px;
+    }
+
+
+    .service_info .service_title
+    {
+        font-size: 65px;
+
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    .service_info .info
+    {
+        width: 209px;
+    }
+
+
+    .service_info .data
+    {
+        width: calc(100% - 249px);
+    }
+
+
+    .service_info .swiper
+    {
+        margin: 80px 0 30px;
+    }
+
+    .service_info .swiper-button-next,
+    .service_info .swiper-button-prev
+    {
+        bottom: -94px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .data
+    {
+        width: calc(100% - 249px);
+    }
+
+
+    .feedback .title
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        position: relative;
+
+        padding-top: 133px;
+        padding-bottom: 62px;
+    }
+
+
+    footer .cont + .cont
+    {
+        margin-top: 103px;
+    }
+
+
+    footer .contacts
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    footer .location
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    footer .socials
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        margin-left: 0;
+    }
+
+    footer .socials > * + *
+    {
+        margin-top: 0;
+    }
+
+    footer .socials a
+    {
+        line-height: 45px;
+
+        width: 47px;
+        height: 47px;
+
+        text-align: center;
+
+        border: 1px solid rgba(255, 255, 255, .5);
+        border-radius: 50%;
+    }
+
+    footer .socials a span
+    {
+        display: none;
+    }
+
+    footer .socials a span + span
+    {
+        display: block;
+    }
+
+
+    footer .creator
+    {
+        margin-top: 1px;
+        margin-left: auto;
+    }
+
+
+    footer .logo
+    {
+        position: absolute;
+        top: 26px;
+        right: 20px;
+    }
+
+    footer .logo span
+    {
+        display: none;
+    }
+
+
+    footer .subscribe .title
+    {
+        width: 439px;
+        max-width: 100%;
+        margin-bottom: 27px;
+    }
+
+    footer .subscribe .title br
+    {
+        display: none;
+    }
+
+
+    footer .subscribe .field
+    {
+        width: calc(100% - 249px);
+    }
+
+    footer .subscribe .submit_btn
+    {
+        width: 229px;
+    }
+
+    footer .subscribe .agree
+    {
+        width: 273px;
+        max-width: 100%;
+    }
+
+    footer .subscribe .agree label
+    {
+        white-space: normal;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fixed_modal
+    {
+        width: 480px;
+    }
+
+
+    .fixed_modal .modal_title
+    {
+        font-size: 30px;
+    }
+
+    .fixed_modal .modal_desc
+    {
+        font-size: 22px;
+    }
+
+
+    .fixed_modal .ok_btn
+    {
+        font-size: 22px;
+
+        margin-top: 40px;
+    }
+
+
+    .fixed_modal .storerooms
+    {
+        font-size: 22px;
+
+        margin-bottom: 40px;
+        padding-bottom: 19px;
+    }
+
+
+    .fixed_modal .form .input
+    {
+        font-size: 22px;
+    }
+
+    .fixed_modal .form .submit_btn
+    {
+        font-size: 22px;
+    }
+
+
+
+    .modal
+    {
+        padding: 62px 20px 40px;
+    }
+
+
+
+    #project_modal .tabs
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px 50px;
+        padding: 0;
+    }
+
+
+    #project_modal .tabs .swiper
+    {
+        padding: 0 20px;
+    }
+
+
+    #project_modal .tabs .swiper-button-next,
+    #project_modal .tabs .swiper-button-prev
+    {
+        display: none !important;
+    }
+
+
+    #project_modal .tab_content .image
+    {
+        height: 550px;
+    }
+
+
+    #project_modal .tab_content .desc
+    {
+        width: 100%;
+        margin-top: 144px;
+    }
+
+
+    #project_modal .tab_content .swiper-button-next,
+    #project_modal .tab_content .swiper-button-prev
+    {
+        top: 580px;
+    }
+
+
+    #project_modal .tab_content .count
+    {
+        top: 594px;
+        right: 0;
+        left: auto;
+    }
+
+
+
+    #construction_progress_modal .tabs
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px 50px;
+        padding: 0;
+    }
+
+
+    #construction_progress_modal .tabs .swiper
+    {
+        padding: 0 20px;
+    }
+
+
+    #construction_progress_modal .tabs .swiper-button-next,
+    #construction_progress_modal .tabs .swiper-button-prev
+    {
+        display: none !important;
+    }
+
+
+    #construction_progress_modal .tab_content .image
+    {
+        height: 550px;
+        margin-bottom: 90px;
+    }
+
+
+    #construction_progress_modal .bottom_title
+    {
+        display: block;
+
+        width: 100%;
+        min-height: 0;
+        margin-top: 40px;
+
+        text-align: left;
+    }
+
+
+    #construction_progress_modal .tab_content .swiper-button-next,
+    #construction_progress_modal .tab_content .swiper-button-prev
+    {
+        top: 580px;
+    }
+
+
+    #construction_progress_modal .tab_content .count
+    {
+        top: 594px;
+        right: 0;
+        left: auto;
+    }
+}

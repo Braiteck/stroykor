@@ -1,0 +1,155 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    top: auto;
+    bottom: 119px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+    margin: 0;
+
+    transition: .2s linear;
+    transform: none;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 50%;
+}
+
+.swiper-button-prev
+{
+    left: 35px;
+}
+
+.swiper-button-next
+{
+    right: auto;
+    left: 119px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 24px;
+}
+
+.swiper-button-next .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    color: #000;
+    border-color: #fff;
+    background: #fff;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: auto;
+    height: 36px;
+
+    pointer-events: none;
+}
+
+.swiper-pagination-bullet
+{
+    position: relative;
+
+    display: block;
+
+    width: 34px;
+    height: 36px;
+
+    pointer-events: auto;
+
+    opacity: 1;
+    border-radius: 0;
+    background: none;
+}
+
+.swiper-pagination-bullet:before,
+.swiper-pagination-bullet:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    background: #fff;
+}
+
+.swiper-pagination-bullet:after
+{
+    width: 1px;
+    height: 100%;
+
+    opacity: 0;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 10px !important;
+}
+
+.swiper-pagination-bullet.active:after
+{
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}

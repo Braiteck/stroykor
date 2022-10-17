@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#000">
+		<meta name="theme-color" content="#000">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1679.css" media="print, (max-width: 1679px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="mob_close_btn"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+
+								<button class="callback_btn">заказать звонок</button>
+
+								<div class="phone">
+									<a href="tel:+74212744344">+7 (4212) 744–344</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo2.svg" alt="">
+								</a href="/">
+
+								<nav class="menu row">
+									<div class="menu_item">
+										<a class="active">Проекты</a>
+									</div>
+
+									<div class="menu_item">
+										<a href="/">Условия</a>
+									</div>
+
+									<div class="menu_item">
+										<a href="/">Предложения</a>
+									</div>
+
+									<div class="menu_item">
+										<a href="/">Новости</a>
+									</div>
+
+									<div class="menu_item">
+										<a href="/">Компания</a>
+									</div>
+
+									<div class="menu_item">
+										<a href="/">Контакты</a>
+									</div>
+								</nav>
+
+								<button class="favorite_btn fixed_modal_btn" data-modal="#favorites_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+
+									<div class="tooltip">
+										<div class="thumb">
+											<img data-src="images/tmp/apartment_thumb.png" alt="" class="lazyload">
+										</div>
+				
+										<div>
+											<div class="title">добавлено в избранное</div>
+
+											<div class="name">1 комната</div>
+											<div class="area">40,6 м<sup>2</sup></div>
+										</div>
+									</div>
+								</button>
+							</div>
+						</div>
+
+						<div class="mob_location">
+							Хабаровск<br> ул. Пионерская, 1, офис 55<br> ООО «СЗ Стройкор Плюс»
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+							<img src="images/logo2.svg" alt="">
+						</a href="/">
+
+						<button class="callback_btn">заказать звонок</button>
+
+						<div class="phone">
+							<a href="tel:+74212744344">+7 (4212) 744–344</a>
+						</div>
+
+						<a href="/" class="favorite_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+						</a>
+
+						<button class="mob_menu_btn"></button>
+					</div>
+				</section>
+
+
+				<section class="category_head">
+					<div class="cont">
+						<a href="/" class="schema_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_schema"></use></svg>
+							<span>Поэтажная схема</span>
+						</a>
+					</div>
+
+					<img data-src="images/tmp/bg_category_head.jpg" alt="" class="bg lazyload">
+				</section>
+
+
+				<section class="filter">
+					<div class="cont">
+						<div class="desc_link">
+							<a href="/">
+								<div class="arr">
+									<svg><use xlink:href="images/sprite.svg#ic_arr_hor2"></use></svg>
+								</div>
+								<span>к описанию</span>
+							</a>
+						</div>
+
+						<div class="block_title">Полюса</div>
+
+						<button class="mob_filter_btn modal_btn" data-modal="#filter_modal">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_filter"></use></svg>
+							<span>Фильтры</span>
+						</button>
+
+						<form action="" class="form filter_form" id="filter_modal">
+							<div class="columns row">
+								<div class="width1of3 tablet_full">
+									<div class="columns row">
+										<div class="line">
+											<div class="label">жк</div>
+
+											<div class="field">
+												<select name="">
+													<option value="1" selected>Полюса</option>
+													<option value="2">A–B People</option>
+													<option value="3">Скандинавия</option>
+													<option value="4">Спутник</option>
+												</select>
+
+												<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="label">тип помещения</div>
+
+											<div class="field">
+												<select name="">
+													<option value="1" selected>Полюса</option>
+													<option value="2">A–B People</option>
+													<option value="3">Скандинавия</option>
+													<option value="4">Спутник</option>
+												</select>
+
+												<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="width1of3 tablet_full">
+									<div class="columns row">
+										<div class="line width1of4">
+											<div class="label">Строение</div>
+
+											<div class="field">
+												<select name="">
+													<option value="1" selected>Все</option>
+													<option value="2">Все</option>
+													<option value="3">Все</option>
+													<option value="4">Все</option>
+												</select>
+
+												<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+										</div>
+
+										<div class="line width3of4">
+											<div class="label">Комнатность</div>
+
+											<div class="field type">
+												<label>
+													<input type="radio" name="type">
+													<div>1к</div>
+												</label>
+
+												<label>
+													<input type="radio" name="type" checked>
+													<div>2к</div>
+												</label>
+
+												<label>
+													<input type="radio" name="type">
+													<div>3к</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="width1of3 tablet_full">
+									<div class="columns row">
+										<div class="line">
+											<div class="label">дата готовности</div>
+
+											<div class="field">
+												<select name="">
+													<option value="1" selected>2 кв. 2023</option>
+													<option value="2">A–B People</option>
+													<option value="3">Скандинавия</option>
+													<option value="4">Спутник</option>
+												</select>
+
+												<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="label">Вид из окон</div>
+
+											<div class="field">
+												<select name="">
+													<option value="1" selected>На Амур</option>
+													<option value="2">A–B People</option>
+													<option value="3">Скандинавия</option>
+													<option value="4">Спутник</option>
+												</select>
+
+												<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="width1of3">
+									<div class="label">Площадь</div>
+									
+									<div class="range area_range">
+										<div class="from_to">
+											от <span class="from">37</span> до <span class="to">71</span> <span>м</span>
+										</div>
+
+										<input type="hidden" id="area_range" name="area_range" value="">
+									</div>
+								</div>
+
+
+								<div class="width1of3 mob_margin_top">
+									<div class="label">Этаж</div>
+
+									<div class="range floor_range">
+										<div class="from_to">
+											от <span class="from">3</span> до <span class="to">10</span>
+										</div>
+
+										<input type="hidden" id="floor_range" name="floor_range" value="">
+									</div>
+								</div>
+
+
+								<div class="width1of3 tablet_full margin_top">
+									<div class="columns row">
+										<div class="mob_w_auto">
+											<div class="label">результаты</div>
+
+											<div class="field views">
+												<button type="button" class="btn list_btn active">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_view_list"></use></svg>
+												</button>
+				
+												<button type="button" class="btn grid_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_view_grid"></use></svg>
+												</button>
+											</div>
+										</div>
+
+										<div class="reset mob_w_auto">
+											<button type="reset" class="reset_btn">
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+												</div>
+												<span>Очистить фильтр</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+
+				<section class="apartments">
+					<div class="cont">
+						<div class="block_head">
+							<div class="title">Найдено: 6</div>
+						</div>
+
+						<div class="list show">
+							<div class="apartment">
+								<button class="mob_toggle_btn"></button>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb.png" alt="" class="lazyload">
+
+									<div class="booked">
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+										</div>
+										<span>Квартира забронирована на 01 час 28 мин</span>
+									</div>
+								</div>
+
+								<div class="info">
+									<div class="name">1 комната</div>
+
+									<div class="type">Евро, Дом «север»<br> <span>полюса</span></div>
+
+									<div class="mob_info">
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+
+								<div class="area">40,6 м<sup>2</sup></div>
+								<div class="view">Вид на улицу</div>
+								<div class="floor">3 этаж</div>
+								<div class="number">№47</div>
+
+								<div class="btns">
+									<button class="lock_btn btn active">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+
+										<span class="booked">
+											<span>Квартира забронирована на 01 час 28 мин</span>
+										</span>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<button class="mob_toggle_btn"></button>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb2.png" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="name">2 комнаты</div>
+
+									<div class="type">Евро, Дом «Юг»<br> <span>полюса</span></div>
+
+									<div class="mob_info">
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+
+								<div class="area">57,2 м<sup>2</sup></div>
+								<div class="view">Вид на улицу</div>
+								<div class="floor">13 этаж</div>
+								<div class="number">№20</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<button class="mob_toggle_btn"></button>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb3.png" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="name">3 комнаты</div>
+
+									<div class="type">Евро, Дом «север»<br> <span>полюса</span></div>
+
+									<div class="mob_info">
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+
+								<div class="area">71,3 м<sup>2</sup></div>
+								<div class="view">Вид на улицу</div>
+								<div class="floor">9 этаж</div>
+								<div class="number">№8</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<button class="mob_toggle_btn"></button>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb4.png" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="name">3 комнаты</div>
+
+									<div class="type">Евро, Дом «Юг»<br> <span>полюса</span></div>
+
+									<div class="mob_info">
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+
+								<div class="area">68,6 м<sup>2</sup></div>
+								<div class="view">Вид на улицу</div>
+								<div class="floor">13 этаж</div>
+								<div class="number">№12</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<button class="mob_toggle_btn"></button>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb5.png" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="name">3 комнаты</div>
+
+									<div class="type">Евро, Дом «Юг»<br> <span>полюса</span></div>
+
+									<div class="mob_info">
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+
+								<div class="area">70,4 м<sup>2</sup></div>
+								<div class="view">Вид на улицу</div>
+								<div class="floor">12 этаж</div>
+								<div class="number">№92</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<button class="mob_toggle_btn"></button>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb3.png" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="name">1 комната</div>
+
+									<div class="type">Евро, Дом «север»<br> <span>полюса</span></div>
+
+									<div class="mob_info">
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+
+								<div class="area">51,2 м<sup>2</sup></div>
+								<div class="view">Вид на улицу</div>
+								<div class="floor">7 этаж</div>
+								<div class="number">№88</div>
+
+								<div class="btns">
+									<button class="lock_btn btn active">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+
+										<span class="booked">
+											<span>Квартира забронирована на 01 час 28 мин</span>
+										</span>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="apartment">
+								<div class="type">полюса</div>
+
+								<div class="btns">
+									<button class="lock_btn btn active">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+
+										<span class="booked">
+											<span>Квартира забронирована на 01 час 28 мин</span>
+										</span>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb_big.png" alt="" class="lazyload">
+								</div>
+
+								<div class="data">
+									<div class="name">1 комната</div>
+
+									<div class="area">40,6 м<sup>2</sup></div>
+
+									<div class="info">
+										<div>Евро, Дом «север»</div>
+										<div class="sep"></div>
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>3 эт.</div>
+										<div class="sep"></div>
+										<div>№47</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<div class="type">полюса</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb2_big.png" alt="" class="lazyload">
+								</div>
+
+								<div class="data">
+									<div class="name">2 комнаты</div>
+
+									<div class="area">57,2 м<sup>2</sup></div>
+
+									<div class="info">
+										<div>Евро, Дом «Юг»</div>
+										<div class="sep"></div>
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>13 эт.</div>
+										<div class="sep"></div>
+										<div>№20</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<div class="type">полюса</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb3_big.png" alt="" class="lazyload">
+								</div>
+
+								<div class="data">
+									<div class="name">3 комнаты</div>
+
+									<div class="area">71,3 м<sup>2</sup></div>
+
+									<div class="info">
+										<div>Евро, Дом «Север»</div>
+										<div class="sep"></div>
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>9 эт.</div>
+										<div class="sep"></div>
+										<div>№8</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<div class="type">полюса</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb4_big.png" alt="" class="lazyload">
+								</div>
+
+								<div class="data">
+									<div class="name">3 комнаты</div>
+
+									<div class="area">68,6 м<sup>2</sup></div>
+
+									<div class="info">
+										<div>Вид на Амур</div>
+										<div class="sep"></div>
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>13 эт.</div>
+										<div class="sep"></div>
+										<div>№12</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<div class="type">полюса</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb5_big.png" alt="" class="lazyload">
+								</div>
+
+								<div class="data">
+									<div class="name">3 комнаты</div>
+
+									<div class="area">70,4 м<sup>2</sup></div>
+
+									<div class="info">
+										<div>Евро, Дом «Юг»</div>
+										<div class="sep"></div>
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>12 эт.</div>
+										<div class="sep"></div>
+										<div>№92</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="apartment">
+								<div class="type">полюса</div>
+
+								<div class="btns">
+									<button class="lock_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+									</button>
+
+									<button class="favorite_btn btn">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</button>
+								</div>
+
+								<div class="thumb">
+									<img data-src="images/tmp/apartment_thumb3_big.png" alt="" class="lazyload">
+								</div>
+
+								<div class="data">
+									<div class="name">1 комната</div>
+
+									<div class="area">51,2 м<sup>2</sup></div>
+
+									<div class="info">
+										<div>Евро, Дом «Юг» </div>
+										<div class="sep"></div>
+										<div>Вид на улицу</div>
+										<div class="sep"></div>
+										<div>7 эт.</div>
+										<div class="sep"></div>
+										<div>№88</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="contacts">
+						<div class="phone">
+							<a href="tel:+74212744344">+7 (4212) 744–344</a>
+						</div>
+
+						<button class="callback_btn">Перезвоните мне</button>
+					</div>
+
+					<div class="info">
+						<div class="location">Хабаровскул.<br> Пионерская, 1, офис 55<br> ООО «СЗ Стройкор Плюс»</div>
+
+						<div class="socials">
+							<div><a href="/" target="_blank" rel="noopener nofollow">
+								<span>Instagram</span>
+								<span>IG</span>
+							</a></div>
+
+							<div><a href="/" target="_blank" rel="noopener nofollow">
+								<span>Youtube</span>
+								<span>YT</span>
+							</a></div>
+
+							<div><a href="/" target="_blank" rel="noopener nofollow">
+								<span>Facebook</span>
+								<span>FB</span>
+							</a></div>
+						</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener nofollow">Сделано<br> <span>Bureau+Sector</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/footer_logo.svg" alt="">
+						<span>девелопер<br> твоих открытий</span>
+					</div>
+
+					<div class="subscribe">
+						<div class="title">Подпишитесьна<br> рассылку, чтобы узнать<br> о старте продаж</div>
+						
+						<form action="">
+							<div class="field">
+								<input type="email" name="" value="" class="input" placeholder="Ваш email*">
+							</div>
+
+							<button type="submit" class="submit_btn">Подписаться</button>
+
+							<div class="agree">
+								<label>
+									<input type="checkbox" name="" checked>
+									<div class="check">
+										<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+									</div>
+									<div>Принимаю условия<br> обработки персональных<br> данных</div>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="fixed_modal" id="favorites_modal">
+			<button class="close_btn">
+				<svg><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+			</button>
+
+			<div class="scroll">
+				<div class="modal_title no_margin">Избранное <sup>3</sup></div>
+
+				<div class="list">
+					<div class="apartment">
+						<div class="thumb">
+							<img data-src="images/tmp/apartment_thumb.png" alt="" class="lazyload">
+						</div>
+
+						<div>
+							<div class="name">1 комната, 52 м<sup>2</sup></div>
+
+							<div class="info">
+								<div>ЖК «Полюса»</div>
+								<div class="sep"></div>
+								<div>Дом «Юг»</div>
+								<div class="sep"></div>
+								<div>3 эт.</div>
+								<div class="sep"></div>
+								<div>№47</div>
+							</div>
+						</div>
+
+						<div class="btns">
+							<button class="lock_btn btn">
+								<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+							</button>
+
+							<button class="delete_btn btn">
+								<svg><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="apartment">
+						<div class="thumb">
+							<img data-src="images/tmp/apartment_thumb.png" alt="" class="lazyload">
+						</div>
+
+						<div>
+							<div class="name">1 комната, 52 м<sup>2</sup></div>
+
+							<div class="info">
+								<div>ЖК «Полюса»</div>
+								<div class="sep"></div>
+								<div>Дом «Юг»</div>
+								<div class="sep"></div>
+								<div>3 эт.</div>
+								<div class="sep"></div>
+								<div>№47</div>
+							</div>
+						</div>
+
+						<div class="btns">
+							<button class="lock_btn btn">
+								<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+							</button>
+
+							<button class="delete_btn btn">
+								<svg><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="apartment">
+						<div class="thumb">
+							<img data-src="images/tmp/apartment_thumb.png" alt="" class="lazyload">
+
+							<div class="booked">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="name">1 комната, 52 м<sup>2</sup></div>
+
+							<div class="info">
+								<div>ЖК «Полюса»</div>
+								<div class="sep"></div>
+								<div>Дом «Юг»</div>
+								<div class="sep"></div>
+								<div>3 эт.</div>
+								<div class="sep"></div>
+								<div>№47</div>
+							</div>
+						</div>
+
+						<div class="btns">
+							<button class="lock_btn btn active">
+								<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+							</button>
+
+							<button class="delete_btn btn">
+								<svg><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+							</button>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

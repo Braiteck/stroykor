@@ -1,0 +1,2691 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 25px;
+    }
+
+
+    .cont
+    {
+        padding: 0 15px;
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        top: 21px;
+        left: 15px;
+
+        height: 24px;
+    }
+
+    .swiper-pagination-bullet
+    {
+        width: 23px;
+        height: 24px;
+    }
+
+    .swiper-pagination-bullet + .swiper-pagination-bullet
+    {
+        margin-left: 8px !important;
+    }
+
+
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .swiper-button-prev
+    {
+        left: 15px;
+    }
+
+    .swiper-button-next
+    {
+        right: 15px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+    .block.big_m
+    {
+        margin-bottom: 70px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    #get_price_modal.fancybox__content > .carousel__button.is-close,
+    .success_modal.fancybox__content > .carousel__button.is-close
+    {
+        top: -23px;
+        right: 15px;
+        left: auto;
+
+        width: 46px;
+        height: 46px;
+    }
+
+    #get_price_modal.fancybox__content > .carousel__button.is-close svg,
+    .success_modal.fancybox__content > .carousel__button.is-close svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+    }
+
+
+    .block_head .exp
+    {
+        font-size: 18px;
+
+        display: block;
+
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .block_head .exp > * + *
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+    .block_head .all_link.mob_full_w
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .block_head .all_link a
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding-top: 66px;
+    }
+
+
+    header .mob_scroll
+    {
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+    }
+
+
+    header .info
+    {
+        display: block;
+
+        padding: 25px 15px;
+
+        border-bottom: 1px solid #c6c8c9;
+    }
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .callback_btn
+    {
+        font-size: 14px;
+
+        margin-left: 0;
+    }
+
+
+    header .phone
+    {
+        font-size: 14px;
+
+        margin-left: auto;
+    }
+
+
+    header .menu
+    {
+        padding: 20px 15px;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 8px;
+    }
+
+    header .menu_item > a
+    {
+        font-size: 36px;
+    }
+
+
+    header .mob_location
+    {
+        font-size: 14px;
+
+        margin-top: 67px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .mob_header .logo img
+    {
+        display: none;
+    }
+
+    .mob_header .logo img + img
+    {
+        display: block;
+
+        height: 36px;
+    }
+
+
+    .mob_header .callback_btn,
+    .mob_header .phone
+    {
+        display: none;
+    }
+
+
+    .mob_header .favorite_link
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        width: 46px;
+        height: 46px;
+        margin-left: 10px;
+    }
+
+    .mob_header .mob_menu_btn.active:before
+    {
+        width: 24px;
+    }
+
+    .mob_header .mob_menu_btn.active:after
+    {
+        width: 24px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head.border
+    {
+        margin-bottom: 30px;
+        padding-bottom: 19px;
+    }
+
+
+    .page_head .title
+    {
+        font-size: 35px;
+    }
+
+
+    .page_head .desc
+    {
+        font-size: 20px;
+
+        margin-top: 30px;
+    }
+
+    .page_head .desc .offset
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3,
+    .form .columns > *,
+    .form .columns > *.width1of4,
+    .form .columns > *.width3of4
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .columns > *.width1of4.default
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 30px;
+    }
+
+    .form .mob_margin_top
+    {
+        margin-top: 30px;
+    }
+
+
+    .form .label
+    {
+        font-size: 13px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .form .nice-select .current
+    {
+        font-size: 18px;
+        line-height: 47px;
+
+        height: 49px;
+    }
+
+    .form .nice-select .list .list_item
+    {
+        font-size: 18px;
+
+        padding: 14px;
+    }
+
+
+    .form .type label div
+    {
+        font-size: 18px;
+
+        padding: 13px;
+    }
+
+
+    .form .range .from_to
+    {
+        font-size: 18px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .form .columns > *.margin_top
+    {
+        margin-top: 35px;
+    }
+
+
+    .form .views
+    {
+        margin-top: 13px;
+    }
+
+
+    .form .reset_btn
+    {
+        font-size: 16px;
+        line-height: 115%;
+    }
+
+
+    .form .mob_w_auto
+    {
+        width: auto;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 502px;
+        padding-bottom: 20px;
+    }
+
+
+    .main_slider .slide .title
+    {
+        font-size: 29px;
+    }
+
+    .main_slider .slide .title::first-letter
+    {
+        margin-left: 64px;
+    }
+
+
+
+    /*-------------
+        Objects
+    -------------*/
+    .objects .block_title
+    {
+        font-size: 35px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .objects .tabs
+    {
+        justify-content: space-between;
+
+        margin-bottom: 64px;
+        margin-left: 0;
+        padding-bottom: 19px;
+    }
+
+    .objects .tabs button
+    {
+        font-size: 24px;
+
+        margin-left: 0;
+    }
+
+
+    .objects .controls
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .objects .controls .categories .btn
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    .objects .controls .views
+    {
+        margin-top: 20px;
+    }
+
+    .objects .controls .views .btn
+    {
+        font-size: 14px;
+
+        color: #000;
+    }
+
+    .objects .controls .views .btn.active
+    {
+        display: none;
+    }
+
+    .objects .controls .views .icon
+    {
+        order: 2;
+
+        margin-right: 0;
+        margin-left: 10px;
+
+        color: #000;
+    }
+
+
+    .objects .object .thumb
+    {
+        margin-bottom: 14px;
+        padding-bottom: 62.06%;
+    }
+
+
+    .objects .object .stickers
+    {
+        padding: 15px;
+    }
+
+    .objects .object .stickers div
+    {
+        font-size: 10px;
+
+        padding: 8px 20px;
+    }
+
+
+    .objects .object .variants > *
+    {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .objects .object .variants .label
+    {
+        font-size: 24px;
+    }
+
+    .objects .object .variants .val
+    {
+        font-size: 15px;
+    }
+
+
+    .objects .object .info
+    {
+        margin-left: 0;
+    }
+
+
+    .objects .object .name
+    {
+        font-size: 35px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .objects .object .location
+    {
+        font-size: 14px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 2px;
+        margin-left: 0;
+    }
+
+
+    .objects #objects_map
+    {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+
+
+    /*--------------------
+        Purchase terms
+    --------------------*/
+    .purchase_terms .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 20px;
+        padding: 0 15px;
+    }
+
+    .purchase_terms .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    .purchase_terms .info .title
+    {
+        font-size: 23px;
+    }
+
+    .purchase_terms .info .link
+    {
+        margin-top: 10px;
+    }
+
+    .purchase_terms .info .link a
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 60px;
+        padding: 0 15px;
+    }
+
+    .services .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    .services .service .thumb
+    {
+        padding-bottom: 269px;
+    }
+
+    .services .service.big_w .thumb
+    {
+        padding-bottom: 200px;
+    }
+
+
+    .services .service .type
+    {
+        font-size: 16px;
+
+        padding: 20px;
+    }
+
+
+    .services .service .info
+    {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    .services .service .title,
+    .services .service.big_w .title
+    {
+        font-size: 23px;
+    }
+
+    .services .service.big_w .title .offset
+    {
+        width: 60px;
+    }
+
+
+    .services .service .icon img
+    {
+        max-height: 32px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article
+    {
+        padding: 46px 0 10px;
+    }
+
+    .articles .article .date
+    {
+        font-size: 18px;
+    }
+
+    .articles .article .date sup
+    {
+        font-size: 14px;
+    }
+
+    .articles .article .category
+    {
+        font-size: 14px;
+    }
+
+    .articles .article .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head .cont
+    {
+        height: 350px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
+    .category_head .schema_link
+    {
+        font-size: 18px;
+
+        width: 100%;
+        height: 51px;
+    }
+
+    .category_head .schema_link .icon
+    {
+        width: 15px;
+        height: 15px;
+        margin-right: 11px;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .filter
+    {
+        margin-bottom: 30px;
+        padding: 40px 0 30px;
+    }
+
+
+    .filter.border
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .filter .desc_link
+    {
+        position: relative;
+        top: 0;
+
+        margin-bottom: 20px;
+    }
+
+    .filter .desc_link a
+    {
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+
+    .filter .block_title
+    {
+        font-size: 35px;
+
+        margin-bottom: 30px;
+
+        text-align: left;
+    }
+
+
+    .filter .mob_filter_btn
+    {
+        display: flex;
+    }
+
+
+    .filter_form
+    {
+        display: none;
+
+        padding: 43px 15px 40px;
+
+        background: #eaeaec;
+    }
+
+
+
+    /*----------------
+        Apartments
+    ----------------*/
+    .apartments .list .apartment
+    {
+        position: relative;
+    }
+
+
+    .apartments .list .apartment .mob_toggle_btn
+    {
+        display: block;
+    }
+
+
+    .apartments .list .apartment .info
+    {
+        order: 1;
+
+        width: 100%;
+        margin: 0;
+        padding: 0 0 0 76px;
+    }
+
+    .apartments .list .apartment .name
+    {
+        font-size: 18px;
+        line-height: 115%;
+
+        letter-spacing: -.01em;
+    }
+
+
+    .apartments .list .apartment .type
+    {
+        font-size: 10px;
+        line-height: 100%;
+
+        margin-top: 10px;
+    }
+
+    .apartments .list .apartment .type span
+    {
+        display: none;
+    }
+
+
+    .apartments .list .apartment .mob_info
+    {
+        font-size: 10px;
+        line-height: 100%;
+
+        margin-top: 5px;
+    }
+
+    .apartments .list .apartment .mob_info .sep
+    {
+        height: 10px;
+        margin: 0 10px;
+    }
+
+
+    .apartments .list .apartment .area
+    {
+        font-size: 18px;
+        line-height: 115%;
+
+        position: absolute;
+        top: 20px;
+        right: 0;
+
+        width: auto;
+
+        letter-spacing: -.01em;
+    }
+
+    .apartments .list .apartment .area sup
+    {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+
+    .apartments .list .apartment .thumb
+    {
+        display: none;
+        order: 2;
+
+        width: 100%;
+        height: 229px;
+        margin-bottom: -8px;
+
+        pointer-events: none;
+    }
+
+
+    .apartments .list .apartment .btns
+    {
+        display: none;
+        justify-content: center;
+        order: 3;
+
+        width: 100%;
+    }
+
+    .apartments .list .apartment .btns .btn
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .apartments .list .apartment .btns .lock_btn .booked
+    {
+        top: auto;
+        right: auto;
+        bottom: 100%;
+        left: -50px;
+
+        margin: 0 0 15px;
+
+        transform: none;
+    }
+
+    .apartments .list .apartment .booked span
+    {
+        font-size: 14px;
+        line-height: 105%;
+
+        width: 203px;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .apartments .list .apartment .btns .btn + .btn
+    {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+
+
+    .apartments .row
+    {
+        margin-left: 0;
+    }
+
+    .apartments .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .apartments .row .apartment
+    {
+        padding-top: 86px;
+    }
+
+
+    .apartments .row .apartment .type
+    {
+        top: 35px;
+    }
+
+
+    .apartments .row .apartment .btns
+    {
+        right: 15px;
+    }
+
+    .apartments .row .apartment .btns .btn
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .apartments .row .apartment .btns .lock_btn .booked
+    {
+        right: -30px;
+
+        width: 203px;
+    }
+
+    .apartments .row .apartment .booked span
+    {
+        font-size: 14px;
+        line-height: 105%;
+
+        width: 203px;
+        padding: 14px;
+    }
+
+
+    .apartments .row .apartment .thumb
+    {
+        height: 260px;
+        margin-bottom: 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .section + .section
+    {
+        margin-top: 70px;
+    }
+
+
+    .contacts_info .block_head
+    {
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    }
+
+
+    .contacts_info .block_head .title
+    {
+        font-size: 25px;
+    }
+
+
+    .contacts_info .block_head .ya_map_link
+    {
+        font-size: 18px;
+
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+        padding: 14px 40px;
+    }
+
+
+    .contacts_info .row
+    {
+        margin-bottom: -30px;
+        margin-left: 0;
+    }
+
+    .contacts_info .row > *
+    {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+
+    .contacts_info .item .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 15px;
+    }
+
+    .contacts_info .item .val
+    {
+        font-size: 14px;
+        line-height: 105%;
+    }
+
+
+
+    /*-----------
+        Terms
+    -----------*/
+    .terms .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 50px;
+        padding: 0 15px;
+    }
+
+
+    .terms .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    .terms .bottom_title
+    {
+        font-size: 20px;
+
+        margin-top: 50px;
+    }
+
+    .terms .bottom_title .offset
+    {
+        display: none;
+    }
+
+
+
+    /*----------------------
+        Sales department
+    ----------------------*/
+    .sales_department .data
+    {
+        margin-bottom: -30px;
+    }
+
+    .sales_department .data > *
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .sales_department .item
+    {
+        font-size: 14px;
+    }
+
+
+    .sales_department .map
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .sales_department .map .desc
+    {
+        font-size: 14px;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .item + .item
+    {
+        margin-top: 60px;
+    }
+
+
+    .about_info .item .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .about_info .data
+    {
+        font-size: 14px;
+        line-height: 105%;
+
+        width: 100%;
+    }
+
+
+    .about_info .data img
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .about_info .block_title
+    {
+        font-size: 20px;
+
+        margin-top: 40px;
+    }
+
+    .about_info .block_title .offset
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 30px;
+        padding-top: 60px;
+    }
+
+
+    .article_info .article_title
+    {
+        font-size: 25px;
+
+        margin-top: 20px;
+    }
+
+
+    .article_info .image
+    {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-bottom: 30px;
+        margin-left: -15px;
+        padding-bottom: 62.5%;
+    }
+
+
+    .article_info .info
+    {
+        margin-bottom: 40px;
+    }
+
+    .article_info .info > *
+    {
+        width: auto;
+    }
+
+
+    .article_info .info .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+    .article_info .info .val
+    {
+        font-size: 18px;
+    }
+
+
+    .article_info .data
+    {
+        width: 100%;
+    }
+
+
+    .article_info .share
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------
+        Share
+    -----------*/
+    .share .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .share .items a
+    {
+        font-size: 18px;
+        line-height: 44px;
+
+        width: 46px;
+        height: 46px;
+    }
+
+
+
+    /*----------------
+        Storerooms
+    ----------------*/
+    .storerooms .head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .storerooms .head .floor
+    {
+        font-size: 25px;
+    }
+
+
+    .storerooms .head .title
+    {
+        font-size: 25px;
+    }
+
+
+    .storerooms .head .colors
+    {
+        font-size: 18px;
+
+        margin-bottom: -16px;
+        margin-left: -40px;
+    }
+
+    .storerooms .head .colors > *
+    {
+        margin-bottom: 16px;
+        margin-left: 40px;
+    }
+
+
+    .storerooms .schema .item
+    {
+        width: 280px;
+    }
+
+    .storerooms .schema .name,
+    .storerooms .schema .area
+    {
+        font-size: 20px;
+    }
+
+    .storerooms .schema .btns
+    {
+        display: block;
+    }
+
+    .storerooms .schema .btn
+    {
+        font-size: 12px;
+    }
+
+    .storerooms .schema .btn + .btn
+    {
+        margin-top: 10px;
+    }
+
+    .storerooms .schema .get_price_btn
+    {
+        font-size: 18px;
+
+        height: 52px;
+        margin-top: 16px;
+        padding: 0;
+    }
+
+
+
+    /*-------------
+        Parking
+    -------------*/
+    .parking .head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .parking .head .floor
+    {
+        font-size: 25px;
+    }
+
+
+    .parking .head .title
+    {
+        font-size: 25px;
+    }
+
+
+    .parking .head .colors
+    {
+        font-size: 18px;
+
+        margin-bottom: -16px;
+        margin-left: -40px;
+    }
+
+    .parking .head .colors > *
+    {
+        margin-bottom: 16px;
+        margin-left: 40px;
+    }
+
+
+    .parking .schema .item
+    {
+        width: 280px;
+    }
+
+    .parking .schema .name,
+    .parking .schema .area
+    {
+        font-size: 20px;
+    }
+
+    .parking .schema .btns
+    {
+        display: block;
+    }
+
+    .parking .schema .btn
+    {
+        font-size: 12px;
+    }
+
+    .parking .schema .btn + .btn
+    {
+        margin-top: 10px;
+    }
+
+    .parking .schema .get_price_btn
+    {
+        font-size: 18px;
+
+        height: 52px;
+        margin-top: 16px;
+        padding: 0;
+    }
+
+
+
+    /*-------------------
+        Building info
+    -------------------*/
+    .building_info .building .title
+    {
+        font-size: 25px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .building_info .row
+    {
+        padding-top: 40px;
+    }
+
+    .building_info .row > *
+    {
+        width: 100%;
+    }
+
+
+    .building_info .building .floor
+    {
+        position: relative;
+    }
+
+    .building_info .building .floor + .floor
+    {
+        margin-top: 6px;
+    }
+
+
+    .building_info .building .number
+    {
+        font-size: 10px;
+        line-height: 32px;
+
+        width: 30px;
+    }
+
+
+    .building_info .building .vals
+    {
+        width: calc(100% - 24px);
+        margin-bottom: -6px;
+        margin-left: -6px;
+    }
+
+    .building_info .building .vals > *
+    {
+        margin-bottom: 6px;
+        margin-left: 6px;
+    }
+
+
+    .building_info .building .vals .item
+    {
+        font-size: 10px;
+        line-height: 30px;
+
+        position: static;
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .building_info .building .vals .item svg
+    {
+        width: 13px;
+        height: 13px;
+    }
+
+
+    .building_info .building .tooltip,
+    .building_info .building .vals .item:first-child .tooltip
+    .building_info .building .vals .item:last-child .tooltip
+    {
+        top: auto;
+        left: 0;
+
+        width: 100%;
+
+        transform: translateY(calc(50% + 21px));
+    }
+
+
+    .building_info .building .tooltip .thumb
+    {
+        width: 60px;
+        height: 62px;
+    }
+
+    .building_info .building .tooltip .thumb + *
+    {
+        width: calc(100% - 68px);
+    }
+
+
+    .building_info .building .tooltip .name,
+    .building_info .building .tooltip .area
+    {
+        font-size: 18px;
+    }
+
+    .building_info .building .tooltip .area sup
+    {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+
+    .building_info .building .tooltip .info
+    {
+        font-size: 10px;
+    }
+
+    .building_info .building .tooltip .info .sep
+    {
+        height: 10px;
+        margin: 0 8px;
+    }
+
+
+    .building_info .building .tooltip .booked
+    {
+        font-size: 10px;
+
+        margin-top: 12px;
+    }
+
+    .building_info .building .vals .item svg
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    .building_info .building .tooltip .booked span
+    {
+        width: calc(100% - 16px);
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .slider
+    {
+        margin-bottom: 73px;
+    }
+
+
+    .project_info .slider .image
+    {
+        height: 459px;
+    }
+
+
+    .project_info .slider .image:before
+    {
+        height: 71px;
+    }
+
+    .project_info .slider .image:after
+    {
+        height: 90px;
+    }
+
+
+    .project_info .slider .swiper-button-next,
+    .project_info .slider .swiper-button-prev
+    {
+        bottom: -23px;
+    }
+
+    .project_info .slider .swiper-button-prev
+    {
+        left: 15px;
+    }
+
+    .project_info .slider .swiper-button-next
+    {
+        left: 76px;
+    }
+
+
+
+    .project_info .information .project_name
+    {
+        font-size: 35px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .project_info .information .selection_btn
+    {
+        font-size: 18px;
+
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 14px;
+    }
+
+
+    .project_info .information .data .row
+    {
+        margin-bottom: -30px;
+        margin-left: 0;
+    }
+
+    .project_info .information .data .row > *
+    {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+
+    .project_info .information .data .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .project_info .information .data .val
+    {
+        font-size: 14px;
+        line-height: 105%;
+    }
+
+    .project_info .information .data .row > *:last-child
+    {
+        margin-left: 0;
+    }
+
+
+    .project_info .information .title
+    {
+        font-size: 23px;
+    }
+
+
+    .project_info .information .video_link .thumb
+    {
+        height: auto;
+        padding-bottom: 62.06%;
+    }
+
+    .project_info .information .video_link .icon
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .project_info .information .video_link .icon svg
+    {
+        left: 2px;
+
+        width: 17px;
+        height: 17px;
+    }
+
+
+
+    .project_info .choose_house .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 30px -15px 0;
+        padding: 0 15px;
+    }
+
+
+    .project_info .choose_house .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+
+    .project_info .choose_house .image
+    {
+        height: 346px;
+    }
+
+    .project_info .choose_house .image img
+    {
+        left: -5%;
+    }
+
+
+    .project_info .choose_house .side .name
+    {
+        font-size: 10px;
+
+        width: 88px;
+        padding: 8px;
+    }
+
+    .project_info .choose_house .side .name:after
+    {
+        bottom: -6px;
+
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .project_info .choose_house .side.north
+    {
+        top: 30.05%;
+        left: 18.84%;
+    }
+
+    .project_info .choose_house .side.south
+    {
+        top: 41.35%;
+        left: 57.14%;
+    }
+
+
+    .project_info .choose_house .side .dropdown
+    {
+        width: 220px;
+
+        transform: translateX(-50%);
+    }
+
+
+    .project_info .choose_house .side .title
+    {
+        padding: 14px;
+    }
+
+    .project_info .choose_house .side .apartment
+    {
+        font-size: 10px;
+
+        padding: 14px;
+    }
+
+
+
+    .project_info .about .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .project_info .about .item .info
+    {
+        font-size: 20px;
+
+        padding: 24px;
+    }
+
+
+    .project_info .about .row
+    {
+        margin-left: 0;
+    }
+
+    .project_info .about .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .project_info .about .row > *.big_w,
+    .project_info .about .row > *.tablet_big_w
+    {
+        width: 100%;
+    }
+
+
+    .project_info .about .item,
+    .project_info .about .item.min_h
+    {
+        height: auto;
+        padding-bottom: 62.06%;
+    }
+
+
+    .project_info .about .item .icon
+    {
+        padding: 24px;
+    }
+
+    .project_info .about .item .icon img
+    {
+        width: 70px;
+    }
+
+
+
+    .project_info .credit
+    {
+        margin-bottom: 70px;
+    }
+
+
+
+    .project_info .tour .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .project_info .tour .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 30px -15px 0;
+        padding: 0 15px;
+    }
+
+
+    .project_info .tour .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    .project_info .tour .image
+    {
+        height: auto;
+        padding-bottom: 68.96%;
+    }
+
+
+    .project_info .tour .image .icon
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .project_info .tour .image .icon svg
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+
+    .project_info .panorama .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .project_info .panorama .image
+    {
+        height: auto;
+        padding-bottom: 68.96%;
+    }
+
+
+    .project_info .panorama .image .icon
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .project_info .panorama .image .icon svg
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+
+    .project_info .location .row
+    {
+        margin-left: 0;
+    }
+
+    .project_info .location .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .project_info .location .icon
+    {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    .project_info .location .val
+    {
+        font-size: 14px;
+
+        padding-top: 14px;
+    }
+
+
+    .project_info .location .block_title
+    {
+        font-size: 23px;
+    }
+
+
+    .project_info .location .map
+    {
+        margin-top: 50px;
+    }
+
+
+    .project_info .location .map .tab_content > *
+    {
+        height: 450px;
+    }
+
+
+    .project_info .location .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 20px -15px 0;
+        padding: 0 15px;
+    }
+
+
+    .project_info .location .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+
+    .project_info .places_nearby .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .project_info .places_nearby .data
+    {
+        width: 100%;
+    }
+
+
+    .project_info .places_nearby .section .icon
+    {
+        display: none;
+    }
+
+
+    .project_info .places_nearby .item
+    {
+        font-size: 18px;
+    }
+
+    .project_info .places_nearby .item .time
+    {
+        width: 55px;
+    }
+
+    .project_info .places_nearby .item .time small
+    {
+        font-size: 10px;
+    }
+
+
+    .project_info .layouts .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 40px;
+        padding: 0 15px;
+    }
+
+
+    .project_info .layouts .tabs button
+    {
+        font-size: 18px;
+
+        width: auto;
+        padding: 13px 39px;
+    }
+
+
+    .project_info .layouts .items
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 30px;
+        padding: 0 15px;
+    }
+
+
+    .project_info .layouts .items > *,
+    .project_info .layouts .items .btn
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .project_info .layouts .type_info
+    {
+        margin-top: 30px;
+    }
+
+
+    .project_info .layouts .type_info .features > *
+    {
+        font-size: 18px;
+    }
+
+
+    .project_info .layouts .type_info .link
+    {
+        font-size: 18px;
+
+        margin-top: 40px;
+        padding: 14px;
+    }
+
+
+    .project_info .layouts .col_right
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------
+        Credit
+    ------------*/
+    .credit .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .credit .flex
+    {
+        margin-bottom: -40px;
+        margin-left: 0;
+    }
+
+    .credit .flex + .flex
+    {
+        margin-top: 40px;
+    }
+
+
+    .credit .flex > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .credit .flex > *.big_w,
+    .credit .flex > *.tablet_big_w
+    {
+        width: 100%;
+    }
+
+
+    .credit .big_h .label
+    {
+        margin-bottom: 62px;
+    }
+
+
+    .credit .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .credit .val
+    {
+        font-size: 40px;
+    }
+
+    .credit .big_h .val
+    {
+        font-size: 118px;
+
+        text-align: center;
+    }
+
+
+    .credit ol
+    {
+        margin-left: 0;
+    }
+
+    .credit ol li
+    {
+        font-size: 14px;
+
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------------
+        Construction progress
+    ---------------------------*/
+    .construction_progress .flex
+    {
+        margin-left: 0;
+    }
+
+    .construction_progress .flex > *,
+    .construction_progress .flex > *.video_btn
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .construction_progress .btn .thumb,
+    .construction_progress .btn.video_btn .thumb
+    {
+        height: auto;
+        padding-bottom: 68.96%;
+    }
+
+    .construction_progress .btn.video_btn .icon,
+    .construction_progress .btn .icon
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .construction_progress .btn .icon svg
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+    .construction_progress .btn.video_btn .icon svg
+    {
+        left: 2px;
+
+        width: 17px;
+        height: 17px;
+    }
+
+
+    .construction_progress .btn .info
+    {
+        font-size: 20px;
+
+        padding: 24px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .head
+    {
+        margin-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 13px;
+    }
+
+
+    .service_info .service_title
+    {
+        font-size: 25px;
+
+        margin-top: 20px;
+    }
+
+
+    .service_info .info
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .service_info .info .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+    .service_info .info .val
+    {
+        font-size: 18px;
+    }
+
+
+    .service_info .data
+    {
+        width: 100%;
+    }
+
+
+    .service_info .swiper
+    {
+        margin: 50px 0 101px;
+    }
+
+    .service_info .swiper-button-next,
+    .service_info .swiper-button-prev
+    {
+        bottom: -61px;
+
+        width: 46px;
+        height: 46px;
+    }
+
+    .service_info .swiper-button-next
+    {
+        left: 61px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .data
+    {
+        width: 100%;
+    }
+
+
+    .feedback .title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-top: 92px;
+        padding-bottom: 40px;
+    }
+
+
+    footer .cont + .cont
+    {
+        margin-top: 30px;
+    }
+
+
+    footer .logo img
+    {
+        height: 55px;
+    }
+
+
+    footer .contacts
+    {
+        margin-bottom: 17px;
+    }
+
+    footer .contacts .phone,
+    footer .contacts .callback_btn
+    {
+        font-size: 14px;
+    }
+
+    footer .contacts .callback_btn
+    {
+        padding-bottom: 2px;
+    }
+
+
+    footer .location
+    {
+        font-size: 14px;
+
+        margin-bottom: 17px;
+    }
+
+
+    footer .creator
+    {
+        font-size: 14px;
+
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+    footer .socials
+    {
+        justify-content: flex-end;
+        order: 2;
+
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    footer .subscribe .title
+    {
+        font-size: 23px;
+
+        margin-bottom: 17px;
+    }
+
+    footer .subscribe .title br
+    {
+        display: block;
+    }
+
+
+    footer .subscribe .field
+    {
+        width: 100%;
+    }
+
+    footer .subscribe .input
+    {
+        font-size: 23px;
+
+        width: 100%;
+        height: 42px;
+    }
+
+    footer .subscribe .agree
+    {
+        width: 100%;
+        margin-top: 11px;
+    }
+
+    footer .subscribe .agree label
+    {
+        font-size: 14px;
+    }
+
+    footer .subscribe .agree label br
+    {
+        display: none;
+    }
+
+    footer .subscribe .submit_btn
+    {
+        font-size: 18px;
+
+        order: 2;
+
+        width: 100%;
+        height: 49px;
+        margin-top: 30px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fixed_modal
+    {
+        width: 282px;
+    }
+
+
+    .fixed_modal .scroll
+    {
+        padding: 76px 15px 40px;
+    }
+
+
+    .fixed_modal .close_btn
+    {
+        top: 15px;
+        left: -23px;
+
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .fixed_modal .modal_title
+    {
+        font-size: 22px;
+    }
+
+    .fixed_modal .modal_title:before,
+    .fixed_modal .modal_title:after
+    {
+        width: 15px;
+    }
+
+
+    .fixed_modal .modal_desc
+    {
+        font-size: 18px;
+    }
+
+    .fixed_modal .modal_desc br
+    {
+        display: none;
+    }
+
+
+    .fixed_modal .ok_btn
+    {
+        font-size: 18px;
+    }
+
+
+    .fixed_modal .storerooms
+    {
+        font-size: 18px;
+
+        margin-bottom: 30px;
+        padding-bottom: 14px;
+    }
+
+    .fixed_modal .storerooms:before,
+    .fixed_modal .storerooms:after
+    {
+        width: 15px;
+    }
+
+
+    .fixed_modal .appartment
+    {
+        margin-bottom: 30px;
+    }
+
+    .fixed_modal .appartment:before,
+    .fixed_modal .appartment:after
+    {
+        width: 15px;
+    }
+
+
+    .fixed_modal .appartment .thumb
+    {
+        width: 60px;
+        height: 62px;
+    }
+
+    .fixed_modal .appartment .thumb + *
+    {
+        width: calc(100% - 70px);
+    }
+
+
+    .fixed_modal .appartment .name
+    {
+        font-size: 18px;
+    }
+
+    .fixed_modal .appartment .name sup
+    {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+
+    .fixed_modal .appartment .info
+    {
+        font-size: 10px;
+    }
+
+    .fixed_modal .appartment .info > *:first-child
+    {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .fixed_modal .appartment .info > *:first-child + *
+    {
+        display: none;
+    }
+
+
+    .fixed_modal .form .line
+    {
+        margin-bottom: 10px;
+    }
+
+    .fixed_modal .form .line.agree
+    {
+        padding-top: 5px;
+    }
+
+    .fixed_modal .form .input
+    {
+        font-size: 18px;
+
+        height: 49px;
+        padding: 0 12px;
+    }
+
+    .fixed_modal .form .agree label
+    {
+        font-size: 10px;
+    }
+
+    .fixed_modal .form .submit_btn
+    {
+        font-size: 18px;
+    }
+
+
+
+    .modal
+    {
+        padding: 43px 15px 30px;
+    }
+
+
+
+    #project_modal .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 30px;
+    }
+
+
+    #project_modal .tabs .swiper
+    {
+        padding: 0 15px;
+    }
+
+
+    #project_modal .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    #project_modal .tab_content .image
+    {
+        height: 200px;
+    }
+
+
+    #project_modal .tab_content .desc
+    {
+        font-size: 18px;
+
+        margin-top: 99px;
+    }
+
+
+    #project_modal .tab_content .swiper-button-next,
+    #project_modal .tab_content .swiper-button-prev
+    {
+        top: 220px;
+
+        width: 49px;
+        height: 49px;
+    }
+
+    #project_modal .tab_content .swiper-button-next
+    {
+        left: 64px;
+    }
+
+
+    #project_modal .tab_content .count
+    {
+        font-size: 22px;
+
+        top: 234px;
+    }
+
+
+
+    #tour_modal .close_btn,
+    #panorama_modal .close_btn
+    {
+        top: 15px;
+        right: 15px;
+
+        width: 46px;
+        height: 46px;
+    }
+
+    #tour_modal .close_btn svg,
+    #panorama_modal .close_btn svg
+    {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    #tour_modal .full_screen_btn,
+    #panorama_modal .full_screen_btn
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    #tour_modal .full_screen_btn svg,
+    #panorama_modal .full_screen_btn svg
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+
+    #construction_progress_modal .tabs
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px 30px;
+    }
+
+
+    #construction_progress_modal .tabs .swiper
+    {
+        padding: 0 15px;
+    }
+
+
+    #construction_progress_modal .tabs button
+    {
+        font-size: 18px;
+
+        padding: 13px 39px;
+    }
+
+
+    #construction_progress_modal .tab_content .image
+    {
+        height: 200px;
+        margin-bottom: 70px;
+    }
+
+
+    #construction_progress_modal .bottom_title
+    {
+        font-size: 22px;
+
+        margin-top: 29px;
+    }
+
+
+    #construction_progress_modal .tab_content .swiper-button-next,
+    #construction_progress_modal .tab_content .swiper-button-prev
+    {
+        top: 220px;
+
+        width: 49px;
+        height: 49px;
+    }
+
+    #construction_progress_modal .tab_content .swiper-button-next
+    {
+        left: 64px;
+    }
+
+
+    #construction_progress_modal .tab_content .count
+    {
+        font-size: 22px;
+
+        top: 234px;
+    }
+}
+
+
+
+
+@media print,
+(max-width: 479px)
+{
+    .project_info .choose_house .image img
+    {
+        left: -20%;
+    }
+}
