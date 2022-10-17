@@ -91,18 +91,18 @@ $(() => {
 
 
 	// Статьи
-	$('.articles .article, .project_info .places_nearby .item').mousemove(function(e) {
+	$('.articles .article, .project_info .places_nearby .item').mousemove(function (e) {
 		let img = $(this).find('.thumb'),
 			x = e.clientX,
 			y = e.clientY
 
-	    img.css("top", y+10+'px')
-	    img.css("left", x+10+'px')
+		img.css("top", y + 10 + 'px')
+		img.css("left", x + 10 + 'px')
 	})
 
 
 	// Страница проекта - Выберите дом
-	$('.project_info .choose_house .side .name').click(function(e){
+	$('.project_info .choose_house .side .name').click(function (e) {
 		e.preventDefault()
 
 		$('.project_info .choose_house .side .name').removeClass('active')
@@ -117,7 +117,7 @@ $(() => {
 
 
 	// Страница проекта - Планировки квартир
-	$('.project_info .layouts .items .btn').click(function(e){
+	$('.project_info .layouts .items .btn').click(function (e) {
 		e.preventDefault()
 
 		let index = $(this).index(),
@@ -170,7 +170,7 @@ $(() => {
 
 
 	// Обьекты
-	$('.objects .controls .views .list_btn').click(function(e){
+	$('.objects .controls .views .list_btn').click(function (e) {
 		e.preventDefault()
 
 		$('.objects .controls .views .btn').removeClass('active')
@@ -180,7 +180,7 @@ $(() => {
 		$('.objects .list_view').fadeIn(300)
 	})
 
-	$('.objects .controls .views .map_btn').click(function(e){
+	$('.objects .controls .views .map_btn').click(function (e) {
 		e.preventDefault()
 
 		$('.objects .controls .views .btn').removeClass('active')
@@ -194,14 +194,14 @@ $(() => {
 	// Табы
 	var locationHash = window.location.hash
 
-	$('body').on('click', '.tabs button', function(e) {
+	$('body').on('click', '.tabs button', function (e) {
 		e.preventDefault()
 
 		if (!$(this).hasClass('active')) {
-			const $parent           = $(this).closest('.tabs_container'),
-				  activeTab         = $(this).data('content'),
-				  $activeTabContent = $(activeTab),
-				  level             = $(this).data('level')
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
 
 			$parent.find('.tabs:first button').removeClass('active')
 			$parent.find('.tab_content.' + level).removeClass('active')
@@ -212,10 +212,10 @@ $(() => {
 	})
 
 	if (locationHash && $('.tabs_container').length) {
-		const $activeTab        = $(`.tabs button[data-content="${locationHash}"]`),
-			  $activeTabContent = $(locationHash),
-			  $parent           = $activeTab.closest('.tabs_container'),
-			  level             = $activeTab.data('level')
+		const $activeTab = $(`.tabs button[data-content="${locationHash}"]`),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
 
 		$parent.find('.tabs:first button').removeClass('active')
 		$parent.find('.tab_content.' + level).removeClass('active')
@@ -292,12 +292,12 @@ $(() => {
 		$('.filter_form .views .btn').removeClass('active')
 		$(this).addClass('active')
 
-		if($(this).hasClass('grid_btn')){
+		if ($(this).hasClass('grid_btn')) {
 			$('.apartments .list').removeClass('show')
 			$('.apartments .row').addClass('show')
 		}
 
-		if($(this).hasClass('list_btn')){
+		if ($(this).hasClass('list_btn')) {
 			$('.apartments .row').removeClass('show')
 			$('.apartments .list').addClass('show')
 		}
@@ -313,7 +313,7 @@ $(() => {
 
 
 	// Добавить в избранное
-	$('.apartments .list .apartment .favorite_btn').click(function(e) {
+	$('.apartments .list .apartment .favorite_btn').click(function (e) {
 		e.preventDefault()
 
 		$(this).addClass('active')
@@ -324,12 +324,12 @@ $(() => {
 
 
 	// Моб. аппартаменты
-	$('.apartments .list .apartment .mob_toggle_btn').click(function(e) {
+	$('.apartments .list .apartment .mob_toggle_btn').click(function (e) {
 		e.preventDefault()
 
 		let parent = $(this).closest('.apartment')
 
-		if(!$(this).hasClass('active')){
+		if (!$(this).hasClass('active')) {
 			$(this).addClass('active')
 
 			$('.apartments .list .apartment .thumb').css('display', 'flex')
@@ -343,7 +343,7 @@ $(() => {
 
 
 	// Fix. modal
-	$('.fixed_modal_btn').click(function(e) {
+	$('.fixed_modal_btn').click(function (e) {
 		e.preventDefault()
 
 		let id = $(this).data('modal')
@@ -356,7 +356,7 @@ $(() => {
 		$('.overlay').fadeIn(300)
 	})
 
-	$('.fixed_modal .close_btn, .overlay, .fixed_modal .ok_btn').click(function(e) {
+	$('.fixed_modal .close_btn, .overlay, .fixed_modal .ok_btn').click(function (e) {
 		e.preventDefault()
 
 		$('.fixed_modal').removeClass('show')
@@ -367,7 +367,7 @@ $(() => {
 
 
 	// 3D тур
-	$('.tour_btn').click(function(e) {
+	$('.tour_btn').click(function (e) {
 		e.preventDefault()
 
 		$('body').addClass('menu_open')
@@ -376,7 +376,7 @@ $(() => {
 		$('.overlay').fadeIn(300)
 	})
 
-	$('#tour_modal .close_btn').click(function(e) {
+	$('#tour_modal .close_btn').click(function (e) {
 		e.preventDefault()
 
 		$('#tour_modal').removeClass('show')
@@ -387,7 +387,7 @@ $(() => {
 
 
 	// Панорама
-	$('.panorama_btn').click(function(e) {
+	$('.panorama_btn').click(function (e) {
 		e.preventDefault()
 
 		$('body').addClass('menu_open')
@@ -396,7 +396,7 @@ $(() => {
 		$('.overlay').fadeIn(300)
 	})
 
-	$('#panorama_modal .close_btn').click(function(e) {
+	$('#panorama_modal .close_btn').click(function (e) {
 		e.preventDefault()
 
 		$('#panorama_modal').removeClass('show')
@@ -453,7 +453,7 @@ $(() => {
 						$parent.find('.tabs button').removeClass('active')
 						$parent.find('.tab_content').removeClass('active')
 
-						$parent.find('.tabs button[data-content="#project_modal_tab'+ (tabIndex + 1) +'"]').addClass('active')
+						$parent.find('.tabs button[data-content="#project_modal_tab' + (tabIndex + 1) + '"]').addClass('active')
 						$('#project_modal_tab' + (tabIndex + 1)).addClass('active')
 
 						// Всплывающее окно проекта - Проекты
@@ -510,7 +510,7 @@ $(() => {
 						$parent.find('.tabs button').removeClass('active')
 						$parent.find('.tab_content').removeClass('active')
 
-						$parent.find('.tabs button[data-content="#construction_progress_modal_tab'+ (tabIndex + 1) +'"]').addClass('active')
+						$parent.find('.tabs button[data-content="#construction_progress_modal_tab' + (tabIndex + 1) + '"]').addClass('active')
 						$('#construction_progress_modal_tab' + (tabIndex + 1)).addClass('active')
 
 						// Всплывающее окно проекта - Проекты
@@ -587,8 +587,8 @@ $(() => {
 
 $(window).on('load', () => {
 	// Фикс. шапка
-	headerInit   = true,
-	headerHeight = $('header').outerHeight()
+	headerInit = true,
+		headerHeight = $('header').outerHeight()
 
 	$('header').wrap('<div class="header_wrap"></div>')
 	$('.header_wrap').height(headerHeight)
@@ -627,7 +627,7 @@ $(window).on('resize', () => {
 		$('.header_wrap').height('auto')
 
 		setTimeout(() => {
-			headerInit   = true
+			headerInit = true
 			headerHeight = $('header').outerHeight()
 
 			$('.header_wrap').height(headerHeight)

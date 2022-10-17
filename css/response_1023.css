@@ -124,15 +124,15 @@
     {
         display: flex;
         overflow: auto;
-        align-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
 
         padding: 0;
 
         border-top: 1px solid #c6c8c9;
 
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         overscroll-behavior-y: contain;
     }
 
@@ -784,12 +784,12 @@
 
     .apartments .list .apartment .info
     {
-        align-self: flex-end;
-
         width: calc(100% - 440px);
         margin-right: auto;
         margin-left: 15px;
         padding: 30px 0;
+
+        align-self: flex-end;
     }
 
     .apartments .list .apartment .mob_info
@@ -840,10 +840,6 @@
         position: relative;
 
         display: flex;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
 
         width: 60px;
         height: 60px;
@@ -852,6 +848,11 @@
 
         border: 1px solid #c6c8c9;
         border-radius: 50%;
+
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .apartments .list .apartment .lock_btn svg
@@ -870,12 +871,15 @@
     .apartments .list .apartment .btns .btn:hover
     {
         color: #fff;
+
         border-color: #000;
         background: #000;
     }
 
     .apartments .list .apartment .btns .lock_btn .booked
     {
+        color: #000;
+
         right: 100%;
         left: auto;
 
@@ -883,8 +887,6 @@
 
         text-align: left;
         pointer-events: none;
-
-        color: #000;
     }
 
     .apartments .list .apartment .btns .lock_btn:hover .booked
@@ -937,10 +939,6 @@
         position: relative;
 
         display: flex;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
 
         width: 60px;
         height: 60px;
@@ -949,6 +947,11 @@
 
         border: 1px solid #c6c8c9;
         border-radius: 50%;
+
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .apartments .row .apartment .lock_btn svg
@@ -967,12 +970,15 @@
     .apartments .row .apartment .btns .btn:hover
     {
         color: #fff;
+
         border-color: #000;
         background: #000;
     }
 
     .apartments .row .apartment .btns .lock_btn .booked
     {
+        color: #000;
+
         top: 100%;
         right: -49px;
         left: auto;
@@ -983,8 +989,6 @@
         transform: none;
         text-align: left;
         pointer-events: none;
-
-        color: #000;
     }
 
     .apartments .row .apartment .booked span
@@ -1896,9 +1900,9 @@
 
     .project_info .layouts .col_left
     {
-        order: 2;
-
         width: 100%;
+
+        order: 2;
     }
 
 
@@ -2171,12 +2175,13 @@
     footer .socials
     {
         display: flex;
+
+        margin-left: 0;
+
         align-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
         justify-content: flex-start;
-
-        margin-left: 0;
     }
 
     footer .socials > * + *
