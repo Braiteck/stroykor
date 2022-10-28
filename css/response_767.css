@@ -57,12 +57,24 @@
         right: 15px;
     }
 
-
-    .block
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
     {
-        margin-bottom: 50px;
+        width: 11px;
+        height: 20px;
     }
 
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover
+    {
+        color: #fff;
+
+        border-color: rgba(255, 255, 255, .7);
+        background: none;
+    }
+
+
+    .block,
     .block.big_m
     {
         margin-bottom: 70px;
@@ -73,6 +85,7 @@
     /*--------------
         Fancybox
     --------------*/
+    .fancybox__content > .carousel__button.is-close,
     #get_price_modal.fancybox__content > .carousel__button.is-close,
     .success_modal.fancybox__content > .carousel__button.is-close
     {
@@ -89,6 +102,20 @@
     {
         width: 20px;
         height: 20px;
+    }
+
+
+    .fancybox__content > .carousel__button.is-close svg,
+    .modal.fancybox__content > .carousel__button.is-close svg
+    {
+        display: block;
+
+        width: 18px;
+        height: 18px;
+
+        filter: none;
+        stroke: none;
+        stroke-width: 0;
     }
 
 
@@ -207,8 +234,12 @@
     header .mob_location
     {
         font-size: 14px;
+    }
 
-        margin-top: 67px;
+
+    header .mob_location
+    {
+        padding: 20px 15px;
     }
 
 
@@ -233,6 +264,12 @@
         display: block;
 
         height: 36px;
+    }
+
+    .mob_header .logo img.project_logo
+    {
+        max-width: 138px;
+        max-height: 22px;
     }
 
 
@@ -457,6 +494,8 @@
 
     .objects .controls
     {
+        position: relative;
+
         margin-bottom: 20px;
     }
 
@@ -469,15 +508,29 @@
     }
 
 
-    .objects .controls .views
+    /*.objects .controls .views
     {
-        margin-top: 20px;
+        position: absolute;
+        top: -54px;
+        right: 0;
+
+        margin-top: 0;
+    }*/
+
+    .objects .controls .views{
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .objects .controls .views .btn + .btn{
+        margin-left: 0;
     }
 
     .objects .controls .views .btn
     {
         color: #000;
         font-size: 14px;
+        line-height: 20px;
     }
 
     .objects .controls .views .btn.active
@@ -577,6 +630,10 @@
         width: calc(100% + 30px);
         margin: 0 -15px 20px;
         padding: 0 15px;
+    }
+
+    .purchase_terms .tabs::-webkit-scrollbar {
+      width: 0;
     }
 
     .purchase_terms .tabs button
@@ -1120,6 +1177,39 @@
     }
 
 
+    .sales_department .callback_btn
+    {
+        font-size: 14px;
+        line-height: 105%;
+    }
+
+
+    .sales_department .docs a
+    {
+        display: inline-block;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+
+    .sales_department .docs .icon
+    {
+        margin-bottom: 8px;
+    }
+
+    .sales_department .docs .icon + *
+    {
+        width: 176px;
+    }
+
+
+    .sales_department .docs a br
+    {
+        display: none;
+    }
+
+
 
     /*----------------
         About info
@@ -1475,12 +1565,20 @@
     .building_info .building .tooltip,
     .building_info .building .vals .item:first-child .tooltip .building_info .building .vals .item:last-child .tooltip
     {
-        top: auto;
+        /*top: auto;
         left: 0;
 
         width: 100%;
 
-        transform: translateY(calc(50% + 21px));
+        transform: translateY(calc(50% + 21px));*/
+
+        left: 5%;
+        width: 90%;
+        transform: inherit;
+        bottom: 10px;
+        top: unset;
+        position: fixed;
+        margin: 0 auto;
     }
 
 
@@ -1688,14 +1786,22 @@
 
     .project_info .choose_house .image
     {
+        z-index: auto;
+
         height: 346px;
     }
 
     .project_info .choose_house .image img
     {
+        z-index: auto;
         left: -5%;
     }
 
+
+    .project_info .choose_house .side
+    {
+        z-index: auto;
+    }
 
     .project_info .choose_house .side .name
     {
@@ -1729,22 +1835,48 @@
 
     .project_info .choose_house .side .dropdown
     {
-        width: 220px;
+        position: fixed;
+        z-index: 101;
+        left: 0;
 
-        transform: translateX(-50%);
+        display: block;
+        overflow: visible;
+
+        width: 100%;
+        margin: 0;
+
+        transition: transform .2s linear;
+        transform: translateY(10%);
+    }
+
+    .project_info .choose_house .side .name.active + .dropdown
+    {
+        transform: translateY(-100%);
     }
 
 
+    .project_info .choose_house .side .mob_close_btn
+    {
+        display: flex;
+    }
+
+    .project_info .choose_house .side .mob_name
+    {
+        display: block;
+    }
+
     .project_info .choose_house .side .title
     {
-        padding: 14px;
+        padding: 15px 20px 20px;
+
+        text-align: left;
     }
 
     .project_info .choose_house .side .apartment
     {
-        font-size: 10px;
+        font-size: 12px;
 
-        padding: 14px;
+        padding: 19px;
     }
 
 
@@ -1785,13 +1917,20 @@
     .project_info .about .item.min_h
     {
         height: auto;
-        padding-bottom: 62.06%;
+        padding-bottom: 100%;
+    }
+
+    .project_info .about .item.min_h,
+    .project_info .about .item.mob_min_h
+    {
+        padding-bottom: 51.72%;
     }
 
 
-    .project_info .about .item .icon
+    .project_info .about .item .icon,
+    .project_info .about .item .info
     {
-        padding: 24px;
+        padding: 15px;
     }
 
     .project_info .about .item .icon img
@@ -1845,7 +1984,7 @@
 
     .project_info .tour .image .icon svg
     {
-        width: 21px;
+        width: 20px;
         height: 21px;
     }
 
@@ -1872,7 +2011,7 @@
 
     .project_info .panorama .image .icon svg
     {
-        width: 21px;
+        width: 20px;
         height: 21px;
     }
 
@@ -1894,7 +2033,7 @@
     {
         width: 30px;
         height: 30px;
-        padding: 4px;
+        padding: 5px;
     }
 
     .project_info .location .val
@@ -1961,6 +2100,11 @@
     .project_info .places_nearby .item
     {
         font-size: 18px;
+    }
+
+    .project_info .places_nearby .item .label
+    {
+        width: calc(100% - 107px);
     }
 
     .project_info .places_nearby .item .time
@@ -2092,6 +2236,8 @@
     .credit .big_h .val
     {
         font-size: 118px;
+
+        padding-bottom: 28px;
 
         text-align: center;
     }
@@ -2228,6 +2374,11 @@
         left: 61px;
     }
 
+    .service_info .swiper-button-next:hover,
+    .service_info .swiper-button-prev:hover{
+        background: #000;
+    }
+
 
 
     /*--------------
@@ -2270,7 +2421,7 @@
 
     footer .contacts
     {
-        margin-bottom: 17px;
+        margin-bottom: 15px;
     }
 
     footer .contacts .phone,
@@ -2288,14 +2439,16 @@
     footer .location
     {
         font-size: 14px;
+        line-height: 105%;
 
-        margin-bottom: 17px;
+        margin-bottom: 15px;
     }
 
 
     footer .creator
     {
         font-size: 14px;
+        line-height: 105%;
 
         margin-top: 0;
         margin-left: 0;
@@ -2372,7 +2525,7 @@
     -----------*/
     .fixed_modal
     {
-        width: 282px;
+        width: 320px;
     }
 
 
@@ -2640,6 +2793,12 @@
     }
 
 
+    #construction_progress_modal .tabs .year
+    {
+        line-height: 49px;
+    }
+
+
     #construction_progress_modal .tab_content .image
     {
         height: 200px;
@@ -2675,6 +2834,12 @@
         font-size: 22px;
 
         top: 234px;
+
+        text-align: right;
+    }
+
+    .objects .object:hover .variants{
+        opacity: 0;
     }
 }
 

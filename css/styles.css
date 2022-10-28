@@ -856,7 +856,7 @@ header .mob_location
     display: none;
 
     width: 100%;
-    margin-top: 126px;
+    margin-top: auto;
     padding: 20px 25px;
 }
 
@@ -974,6 +974,12 @@ header.fixed .bottom .logo
     display: none;
 }
 
+.mob_header .logo img.project_logo
+{
+    max-width: 175px;
+    max-height: 30px;
+}
+
 
 
 .mob_header .callback_btn
@@ -1039,6 +1045,9 @@ header.fixed .bottom .logo
 
 .mob_header .favorite_link .icon
 {
+    position: relative;
+    top: 1px;
+
     display: block;
 
     width: 20px;
@@ -5718,7 +5727,7 @@ header.fixed .bottom .logo
 .project_info .choose_house .image
 {
     position: relative;
-    z-index: 3;
+    z-index: 20;
 
     height: 850px;
 
@@ -5860,6 +5869,52 @@ header.fixed .bottom .logo
 .project_info .choose_house .side .name.active + .dropdown
 {
     display: block;
+}
+
+
+.project_info .choose_house .side .mob_close_btn
+{
+    color: #fff;
+
+    position: absolute;
+    top: -23px;
+    right: 15px;
+
+    display: none;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+    background: #000;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.project_info .choose_house .side .mob_close_btn .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+}
+
+
+.project_info .choose_house .side .mob_name
+{
+    font-size: 25px;
+    line-height: 95%;
+
+    display: none;
+
+    padding: 20px 15px 0;
+
+    letter-spacing: -.03em;
+
+    background: #dee3e8;
 }
 
 
@@ -8788,4 +8843,23 @@ footer .subscribe .agree input:checked + .check svg
     text-align: center;
     white-space: nowrap;
     letter-spacing: -.03em;
+}
+
+
+@media print,
+(max-width: 1410px)
+{
+    .contacts_info .row .item:nth-child(3){
+        display: none;
+    }
+}
+
+.carousel__button svg{
+    width: 24px;
+    height: 24px;
+    stroke-width: 0.5px;
+}
+
+#project_modal .swiper-button-next .icon:hover, #project_modal .swiper-button-prev .icon:hover{
+        color: #fff;
 }

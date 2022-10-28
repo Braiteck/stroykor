@@ -107,6 +107,20 @@ $(() => {
 
 		$('.project_info .choose_house .side .name').removeClass('active')
 		$(this).toggleClass('active')
+
+		if ($(window).width() < 768) {
+			$('.overlay').fadeIn(200)
+		}
+	})
+
+	$('.project_info .choose_house .side .mob_close_btn').click(function (e) {
+		e.preventDefault()
+
+		$('.project_info .choose_house .side .name').removeClass('active')
+
+		if ($(window).width() < 768) {
+			$('.overlay').fadeOut(200)
+		}
 	})
 
 	$(document).click(e => {
@@ -581,6 +595,21 @@ $(() => {
 
 		$('.overlay').fadeIn(300)
 	})
+
+	$(".apartments .row .apartment .favorite_btn svg").hover(
+	  function() {
+	    $( this ).find("use").attr("xlink:href", "images/sprite.svg#ic_favorite");
+	  }, function() {
+	    $( this ).find("use").attr("xlink:href", "images/sprite.svg#ic_favorite2");
+	});
+
+	if ($(window).width() < 768) {
+		$('body').on('click', '.building_info .building .item .tooltip', function (e) {
+			e.preventDefault()
+			$("#booking_modal").addClass("show");
+			$('.overlay').fadeIn(200)
+		})
+	}
 })
 
 

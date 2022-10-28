@@ -124,15 +124,12 @@
     {
         display: flex;
         overflow: auto;
+        flex-direction: column;
 
         padding: 0;
 
         border-top: 1px solid #c6c8c9;
 
-        align-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
         overscroll-behavior-y: contain;
     }
 
@@ -188,7 +185,7 @@
     }
 
 
-    header .favorite_link
+    header .favorite_btn
     {
         display: none;
     }
@@ -1597,7 +1594,7 @@
         left: -22%;
 
         width: auto;
-        min-width: 100vw;
+        min-width: 100%;
     }
 
 
