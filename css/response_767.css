@@ -517,12 +517,14 @@
         margin-top: 0;
     }*/
 
-    .objects .controls .views{
+    .objects .controls .views
+    {
         margin-right: auto;
         margin-left: 0;
     }
 
-    .objects .controls .views .btn + .btn{
+    .objects .controls .views .btn + .btn
+    {
         margin-left: 0;
     }
 
@@ -632,8 +634,9 @@
         padding: 0 15px;
     }
 
-    .purchase_terms .tabs::-webkit-scrollbar {
-      width: 0;
+    .purchase_terms .tabs::-webkit-scrollbar
+    {
+        width: 0;
     }
 
     .purchase_terms .tabs button
@@ -1565,20 +1568,20 @@
     .building_info .building .tooltip,
     .building_info .building .vals .item:first-child .tooltip .building_info .building .vals .item:last-child .tooltip
     {
+        position: fixed;
+        top: unset;
+        bottom: 10px;
         /*top: auto;
         left: 0;
-
         width: 100%;
 
         transform: translateY(calc(50% + 21px));*/
-
         left: 5%;
+
         width: 90%;
-        transform: inherit;
-        bottom: 10px;
-        top: unset;
-        position: fixed;
         margin: 0 auto;
+
+        transform: inherit;
     }
 
 
@@ -2375,7 +2378,8 @@
     }
 
     .service_info .swiper-button-next:hover,
-    .service_info .swiper-button-prev:hover{
+    .service_info .swiper-button-prev:hover
+    {
         background: #000;
     }
 
@@ -2838,7 +2842,8 @@
         text-align: right;
     }
 
-    .objects .object:hover .variants{
+    .objects .object:hover .variants
+    {
         opacity: 0;
     }
 }

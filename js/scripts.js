@@ -597,11 +597,11 @@ $(() => {
 	})
 
 	$(".apartments .row .apartment .favorite_btn svg").hover(
-	  function() {
-	    $( this ).find("use").attr("xlink:href", "images/sprite.svg#ic_favorite");
-	  }, function() {
-	    $( this ).find("use").attr("xlink:href", "images/sprite.svg#ic_favorite2");
-	});
+		function () {
+			$(this).find("use").attr("xlink:href", "images/sprite.svg#ic_favorite");
+		}, function () {
+			$(this).find("use").attr("xlink:href", "images/sprite.svg#ic_favorite2");
+		});
 
 	if ($(window).width() < 768) {
 		$('body').on('click', '.building_info .building .item .tooltip', function (e) {

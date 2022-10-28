@@ -8849,17 +8849,22 @@ footer .subscribe .agree input:checked + .check svg
 @media print,
 (max-width: 1410px)
 {
-    .contacts_info .row .item:nth-child(3){
+    .contacts_info .row .item:nth-child(3)
+    {
         display: none;
     }
 }
 
-.carousel__button svg{
+.carousel__button svg
+{
     width: 24px;
     height: 24px;
-    stroke-width: 0.5px;
+
+    stroke-width: .5px;
 }
 
-#project_modal .swiper-button-next .icon:hover, #project_modal .swiper-button-prev .icon:hover{
-        color: #fff;
+#project_modal .swiper-button-next .icon:hover,
+#project_modal .swiper-button-prev .icon:hover
+{
+    color: #fff;
 }
